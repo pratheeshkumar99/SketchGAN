@@ -33,6 +33,11 @@ best_val_loss = float("inf")
 patience = 10  # Early stopping if no improvement after X epochs
 trigger_times = 0
 
+if not os.path.exists("saved_models"):
+    os.makedirs("saved_models")
+
+
+
 # Start training
 for epoch in range(num_epochs):
     generator.train()
@@ -96,8 +101,8 @@ for epoch in range(num_epochs):
         trigger_times = 0
 
         # Save best models
-        torch.save(generator.state_dict(), "best_generator.pth")
-        torch.save(discriminator.state_dict(), "best_discriminator.pth")
+        torch.save(generator.state_dict(), "saved_models/best_generator.pth")
+        torch.save(discriminator.state_dict(), "saved_models/best_discriminator.pth")
         print(f"Model saved at epoch {epoch} with validation loss: {val_loss:.4f}")
     else:
         trigger_times += 1
