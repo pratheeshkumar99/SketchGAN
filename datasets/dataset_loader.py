@@ -1,7 +1,7 @@
 import os
-from PIL import Image
-from torch.utils.data import Dataset, DataLoader
 from sklearn.model_selection import train_test_split
+from torch.utils.data import DataLoader, Dataset
+from PIL import Image
 import torchvision.transforms as transforms
 
 # Custom Dataset for loading Sketch and Photo pairs
@@ -27,10 +27,8 @@ class SketchPhotoDataset(Dataset):
             photo = self.transform(photo)
 
         return sketch, photo
-    
 
-
-    # Function to create data loaders
+# Create Dataloaders for train, validation, and test splits
 def create_dataloaders(sketch_dir, photo_dir, batch_size=16, test_size=0.3, val_split=0.5):
     # Get the list of filenames in each directory
     sketch_files = sorted(os.listdir(sketch_dir))
@@ -43,7 +41,7 @@ def create_dataloaders(sketch_dir, photo_dir, batch_size=16, test_size=0.3, val_
     sketch_paths = [os.path.join(sketch_dir, f) for f in sketch_files]
     photo_paths = [os.path.join(photo_dir, f) for f in photo_files]
 
-    # Split into train/test sets
+    # Now split into train/test sets
     train_sketches, test_sketches, train_photos, test_photos = train_test_split(
         sketch_paths, photo_paths, test_size=test_size, random_state=42
     )
@@ -53,10 +51,12 @@ def create_dataloaders(sketch_dir, photo_dir, batch_size=16, test_size=0.3, val_
         test_sketches, test_photos, test_size=val_split, random_state=42
     )
 
-    # Define transformations: Resize, Normalize, Convert to Tensor
+    print(f"Training images: {len(train_sketches)}, Validation images: {len(val_sketches)}, Test images: {len(test_sketches)}")
+
+    # Define the transform: Resize the images, convert to tensors, and normalize
     transform = transforms.Compose([
-        transforms.Resize((256, 256)),
-        transforms.ToTensor(),
+        transforms.Resize((256, 256)),  # Resize both sketches and photos to 256x256
+        transforms.ToTensor(),  # Convert images to tensors
         transforms.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])  # Normalize to [-1, 1]
     ])
 
