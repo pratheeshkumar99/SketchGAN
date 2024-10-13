@@ -22,8 +22,15 @@ def parse_args():
 # Main training function
 def train(args):
     # Set up device: use GPU if available, otherwise CPU
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    print(f"Using device: {device}")
+    if torch.cuda.is_available():
+        device = torch.device("cuda")
+        print(f"Using device: {device} (GPU)")
+    elif torch.backends.mps.is_available():
+        device = torch.device("mps")  # M1/M2 Macs with Metal support
+        print(f"Using device: {device} (MPS)")
+    else:
+        device = torch.device("cpu")
+        print(f"Using device: {device} (CPU)")
 
     # Create dataloaders
     train_loader, val_loader, test_loader = create_dataloaders(args.sketch_dir, args.photo_dir, args.batch_size)

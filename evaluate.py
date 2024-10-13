@@ -78,9 +78,15 @@ if __name__ == "__main__":
     parser.add_argument('--generator_path', type=str,required=True, help='Path to the trained generator model')
     args = parser.parse_args()
 
-    # Set the device: GPU if available, otherwise CPU
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    print(f"Using device: {device}")
+    if torch.cuda.is_available():
+        device = torch.device("cuda")
+        print(f"Using device: {device} (GPU)")
+    elif torch.backends.mps.is_available():
+        device = torch.device("mps")  # M1/M2 Macs with Metal support
+        print(f"Using device: {device} (MPS)")
+    else:
+        device = torch.device("cpu")
+        print(f"Using device: {device} (CPU)")
 
     # Load the data
     _, _, test_loader = create_dataloaders(args.sketch_dir, args.photo_dir, batch_size=args.batch_size)
