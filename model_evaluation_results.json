@@ -1,0 +1,1922 @@
+{
+    "lr_0.0005_batch_8_l1_100_dropout_0.3": {
+        "SSIM": 0.5440728931591429,
+        "PSNR": 17.249664062182028,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 8,
+            "l1_weight": 100,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.001_batch_32_l1_100_dropout_0.1": {
+        "SSIM": 0.5435605984309624,
+        "PSNR": 17.910129533233732,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 32,
+            "l1_weight": 100,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.001_batch_16_l1_10_dropout_0.3": {
+        "SSIM": 0.5991680652930819,
+        "PSNR": 17.632088746317304,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 16,
+            "l1_weight": 10,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.001_batch_64_l1_50_dropout_0.5": {
+        "SSIM": 0.5341807665496037,
+        "PSNR": 17.56299952662516,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 64,
+            "l1_weight": 50,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0002_batch_64_l1_100_dropout_0.3": {
+        "SSIM": 0.4457286750448161,
+        "PSNR": 16.742165577617246,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 64,
+            "l1_weight": 100,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.001_batch_16_l1_200_dropout_0.5": {
+        "SSIM": 0.5604751901379947,
+        "PSNR": 17.58588907490703,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 16,
+            "l1_weight": 200,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.005_batch_16_l1_10_dropout_0.1": {
+        "SSIM": 0.6230655065898237,
+        "PSNR": 17.631784147344238,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 16,
+            "l1_weight": 10,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0002_batch_8_l1_200_dropout_0.3": {
+        "SSIM": 0.557931342001619,
+        "PSNR": 17.815809219641707,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 8,
+            "l1_weight": 200,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0002_batch_16_l1_50_dropout_0.1": {
+        "SSIM": 0.5099791093119259,
+        "PSNR": 17.56689547304742,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 16,
+            "l1_weight": 50,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.001_batch_64_l1_50_dropout_0.3": {
+        "SSIM": 0.42571247035059434,
+        "PSNR": 17.059675377204506,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 64,
+            "l1_weight": 50,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0002_batch_64_l1_100_dropout_0.5": {
+        "SSIM": 0.37300907126788435,
+        "PSNR": 16.552862166278565,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 64,
+            "l1_weight": 100,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0005_batch_8_l1_100_dropout_0.5": {
+        "SSIM": 0.4987464711583894,
+        "PSNR": 17.79302417721056,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 8,
+            "l1_weight": 100,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.005_batch_64_l1_100_dropout_0.1": {
+        "SSIM": 0.5341294561994487,
+        "PSNR": 16.961971755023896,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 64,
+            "l1_weight": 100,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.001_batch_16_l1_10_dropout_0.5": {
+        "SSIM": 0.5727228306490799,
+        "PSNR": 17.96940470625531,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 16,
+            "l1_weight": 10,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0002_batch_8_l1_200_dropout_0.5": {
+        "SSIM": 0.604790498470438,
+        "PSNR": 17.835512552066614,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 8,
+            "l1_weight": 200,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0005_batch_32_l1_10_dropout_0.1": {
+        "SSIM": 0.49890097050831234,
+        "PSNR": 16.96366085665366,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 32,
+            "l1_weight": 10,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0002_batch_64_l1_10_dropout_0.1": {
+        "SSIM": 0.3230469637903674,
+        "PSNR": 16.119244464611942,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 64,
+            "l1_weight": 10,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0005_batch_64_l1_200_dropout_0.1": {
+        "SSIM": 0.42719574324015913,
+        "PSNR": 16.89579544568573,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 64,
+            "l1_weight": 200,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0005_batch_8_l1_50_dropout_0.1": {
+        "SSIM": 0.5599400935501888,
+        "PSNR": 17.689805955482036,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 8,
+            "l1_weight": 50,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.001_batch_16_l1_200_dropout_0.3": {
+        "SSIM": 0.6086937230208824,
+        "PSNR": 17.684830739484696,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 16,
+            "l1_weight": 200,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.005_batch_64_l1_50_dropout_0.1": {
+        "SSIM": 0.4915549785926424,
+        "PSNR": 17.05142010859682,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 64,
+            "l1_weight": 50,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0002_batch_64_l1_200_dropout_0.5": {
+        "SSIM": 0.37502245759141856,
+        "PSNR": 16.362777474437713,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 64,
+            "l1_weight": 200,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.005_batch_8_l1_50_dropout_0.1": {
+        "SSIM": 0.6511840717545871,
+        "PSNR": 17.21818921140203,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 8,
+            "l1_weight": 50,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0005_batch_64_l1_10_dropout_0.1": {
+        "SSIM": 0.4152811775947439,
+        "PSNR": 16.73686247691261,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 64,
+            "l1_weight": 10,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0002_batch_8_l1_50_dropout_0.1": {
+        "SSIM": 0.551095155806377,
+        "PSNR": 17.35023331568892,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 8,
+            "l1_weight": 50,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0002_batch_32_l1_10_dropout_0.1": {
+        "SSIM": 0.4423850168441904,
+        "PSNR": 16.982755058686738,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 32,
+            "l1_weight": 10,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.005_batch_32_l1_50_dropout_0.1": {
+        "SSIM": 0.6334937317618008,
+        "PSNR": 17.44193532876071,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 32,
+            "l1_weight": 50,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.005_batch_64_l1_200_dropout_0.1": {
+        "SSIM": 0.42633934062102746,
+        "PSNR": 16.200480068863786,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 64,
+            "l1_weight": 200,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0005_batch_8_l1_200_dropout_0.5": {
+        "SSIM": 0.6153537651588177,
+        "PSNR": 17.77471043174565,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 8,
+            "l1_weight": 200,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0002_batch_8_l1_100_dropout_0.5": {
+        "SSIM": 0.5674789897326765,
+        "PSNR": 17.898595741894074,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 8,
+            "l1_weight": 100,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.001_batch_8_l1_50_dropout_0.5": {
+        "SSIM": 0.627612960749659,
+        "PSNR": 17.787984420081205,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 8,
+            "l1_weight": 50,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.001_batch_16_l1_100_dropout_0.3": {
+        "SSIM": 0.53748953547971,
+        "PSNR": 17.780984983355008,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 16,
+            "l1_weight": 100,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0005_batch_64_l1_100_dropout_0.1": {
+        "SSIM": 0.4468970072680506,
+        "PSNR": 17.120061038718298,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 64,
+            "l1_weight": 100,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.001_batch_32_l1_50_dropout_0.3": {
+        "SSIM": 0.5881147055790342,
+        "PSNR": 17.265684863044797,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 32,
+            "l1_weight": 50,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.001_batch_32_l1_200_dropout_0.1": {
+        "SSIM": 0.4951829807511691,
+        "PSNR": 17.28956451512731,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 32,
+            "l1_weight": 200,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0005_batch_16_l1_50_dropout_0.1": {
+        "SSIM": 0.5716907073711527,
+        "PSNR": 17.78200532270175,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 16,
+            "l1_weight": 50,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0005_batch_8_l1_200_dropout_0.3": {
+        "SSIM": 0.5195533479082173,
+        "PSNR": 17.32303131337453,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 8,
+            "l1_weight": 200,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0002_batch_64_l1_200_dropout_0.3": {
+        "SSIM": 0.37532830957708685,
+        "PSNR": 16.51903759625265,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 64,
+            "l1_weight": 200,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.001_batch_8_l1_50_dropout_0.3": {
+        "SSIM": 0.5886936927663868,
+        "PSNR": 17.530545046943736,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 8,
+            "l1_weight": 50,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.001_batch_16_l1_100_dropout_0.5": {
+        "SSIM": 0.5886669919408601,
+        "PSNR": 18.110776805740247,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 16,
+            "l1_weight": 100,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.001_batch_32_l1_50_dropout_0.5": {
+        "SSIM": 0.49348247667838785,
+        "PSNR": 17.280169620214046,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 32,
+            "l1_weight": 50,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0002_batch_8_l1_100_dropout_0.3": {
+        "SSIM": 0.510706340444499,
+        "PSNR": 17.39395748344452,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 8,
+            "l1_weight": 100,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0002_batch_32_l1_100_dropout_0.5": {
+        "SSIM": 0.49083346025697117,
+        "PSNR": 16.879345693609675,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 32,
+            "l1_weight": 100,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.001_batch_64_l1_10_dropout_0.1": {
+        "SSIM": 0.49670842700991136,
+        "PSNR": 17.27839300116042,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 64,
+            "l1_weight": 10,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0005_batch_16_l1_100_dropout_0.5": {
+        "SSIM": 0.48545991757820395,
+        "PSNR": 17.39755097559403,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 16,
+            "l1_weight": 100,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.005_batch_32_l1_100_dropout_0.1": {
+        "SSIM": 0.47283801436424255,
+        "PSNR": 16.832092976445402,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 32,
+            "l1_weight": 100,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.001_batch_8_l1_200_dropout_0.5": {
+        "SSIM": 0.5305862827547665,
+        "PSNR": 17.55771703710336,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 8,
+            "l1_weight": 200,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0002_batch_16_l1_10_dropout_0.5": {
+        "SSIM": 0.6031303046078518,
+        "PSNR": 18.012749394021927,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 16,
+            "l1_weight": 10,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.005_batch_16_l1_50_dropout_0.5": {
+        "SSIM": 0.631332658488175,
+        "PSNR": 16.97071943879437,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 16,
+            "l1_weight": 50,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0002_batch_16_l1_200_dropout_0.1": {
+        "SSIM": 0.5283471500051433,
+        "PSNR": 17.42470803712801,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 16,
+            "l1_weight": 200,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0005_batch_8_l1_10_dropout_0.3": {
+        "SSIM": 0.5591137594190138,
+        "PSNR": 18.23567190550765,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 8,
+            "l1_weight": 10,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.005_batch_16_l1_200_dropout_0.5": {
+        "SSIM": 0.5134891836807646,
+        "PSNR": 16.47206535079269,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 16,
+            "l1_weight": 200,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.005_batch_64_l1_10_dropout_0.3": {
+        "SSIM": 0.4115084183627161,
+        "PSNR": 16.3710398857334,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 64,
+            "l1_weight": 10,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0005_batch_32_l1_200_dropout_0.1": {
+        "SSIM": 0.5130656680156445,
+        "PSNR": 17.282589686510406,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 32,
+            "l1_weight": 200,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0005_batch_32_l1_50_dropout_0.3": {
+        "SSIM": 0.431690599383979,
+        "PSNR": 16.867494935997122,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 32,
+            "l1_weight": 50,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0002_batch_64_l1_50_dropout_0.3": {
+        "SSIM": 0.3978523786725669,
+        "PSNR": 16.790221870503935,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 64,
+            "l1_weight": 50,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0005_batch_16_l1_100_dropout_0.3": {
+        "SSIM": 0.6177335977554321,
+        "PSNR": 17.98548202925576,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 16,
+            "l1_weight": 100,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.001_batch_64_l1_100_dropout_0.1": {
+        "SSIM": 0.5270943353916037,
+        "PSNR": 17.509485569785003,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 64,
+            "l1_weight": 100,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.001_batch_8_l1_200_dropout_0.3": {
+        "SSIM": 0.5783913166358553,
+        "PSNR": 17.68518085850704,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 8,
+            "l1_weight": 200,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.001_batch_16_l1_50_dropout_0.1": {
+        "SSIM": 0.514340007099612,
+        "PSNR": 17.407784899703664,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 16,
+            "l1_weight": 50,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0002_batch_32_l1_100_dropout_0.3": {
+        "SSIM": 0.4312963917337615,
+        "PSNR": 16.70167583419611,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 32,
+            "l1_weight": 100,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0005_batch_8_l1_10_dropout_0.5": {
+        "SSIM": 0.6303042399472204,
+        "PSNR": 18.146496722311056,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 8,
+            "l1_weight": 10,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.005_batch_16_l1_200_dropout_0.3": {
+        "SSIM": 0.6089117506454731,
+        "PSNR": 17.511275541941835,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 16,
+            "l1_weight": 200,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.005_batch_64_l1_10_dropout_0.5": {
+        "SSIM": 0.620972020872708,
+        "PSNR": 17.292178397044314,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 64,
+            "l1_weight": 10,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0005_batch_32_l1_50_dropout_0.5": {
+        "SSIM": 0.47521784285019186,
+        "PSNR": 17.18719093975295,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 32,
+            "l1_weight": 50,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0002_batch_64_l1_50_dropout_0.5": {
+        "SSIM": 0.45417914000050774,
+        "PSNR": 16.874605204745976,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 64,
+            "l1_weight": 50,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0002_batch_16_l1_10_dropout_0.3": {
+        "SSIM": 0.502533207679617,
+        "PSNR": 17.13286784403456,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 16,
+            "l1_weight": 10,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.005_batch_16_l1_50_dropout_0.3": {
+        "SSIM": 0.628465185905325,
+        "PSNR": 17.40671139760282,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 16,
+            "l1_weight": 50,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.005_batch_8_l1_200_dropout_0.1": {
+        "SSIM": 0.5358269214630127,
+        "PSNR": 16.37225207161054,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 8,
+            "l1_weight": 200,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.001_batch_8_l1_100_dropout_0.3": {
+        "SSIM": 0.5943837340535789,
+        "PSNR": 18.061395792947266,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 8,
+            "l1_weight": 100,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.001_batch_64_l1_200_dropout_0.1": {
+        "SSIM": 0.41839514929672766,
+        "PSNR": 16.47174834760018,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 64,
+            "l1_weight": 200,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0005_batch_16_l1_10_dropout_0.3": {
+        "SSIM": 0.3844066549991739,
+        "PSNR": 17.00233995938695,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 16,
+            "l1_weight": 10,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0005_batch_16_l1_200_dropout_0.3": {
+        "SSIM": 0.5233458177796726,
+        "PSNR": 17.494902846754712,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 16,
+            "l1_weight": 200,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.005_batch_32_l1_10_dropout_0.5": {
+        "SSIM": 0.5976380644173458,
+        "PSNR": 17.32632393698155,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 32,
+            "l1_weight": 10,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0005_batch_64_l1_50_dropout_0.5": {
+        "SSIM": 0.4465946195454433,
+        "PSNR": 16.854221757818348,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 64,
+            "l1_weight": 50,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0002_batch_8_l1_10_dropout_0.5": {
+        "SSIM": 0.5807156244228626,
+        "PSNR": 17.88162275366113,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 8,
+            "l1_weight": 10,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.005_batch_8_l1_10_dropout_0.5": {
+        "SSIM": 0.6548661466302543,
+        "PSNR": 17.110943640734327,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 8,
+            "l1_weight": 10,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0002_batch_32_l1_200_dropout_0.3": {
+        "SSIM": 0.41648852825164795,
+        "PSNR": 16.434003636157595,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 32,
+            "l1_weight": 200,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0002_batch_32_l1_50_dropout_0.5": {
+        "SSIM": 0.4017365687880023,
+        "PSNR": 16.395796354340504,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 32,
+            "l1_weight": 50,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.005_batch_16_l1_100_dropout_0.3": {
+        "SSIM": 0.6124033825150852,
+        "PSNR": 17.244411984571464,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 16,
+            "l1_weight": 100,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.001_batch_8_l1_10_dropout_0.1": {
+        "SSIM": 0.6089005192805981,
+        "PSNR": 17.890667477722094,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 8,
+            "l1_weight": 10,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.005_batch_8_l1_100_dropout_0.1": {
+        "SSIM": 0.6858052076964543,
+        "PSNR": 18.055584918689114,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 8,
+            "l1_weight": 100,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.005_batch_32_l1_10_dropout_0.3": {
+        "SSIM": 0.5310451131442497,
+        "PSNR": 16.62115437723875,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 32,
+            "l1_weight": 10,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0002_batch_8_l1_10_dropout_0.3": {
+        "SSIM": 0.6173906100207361,
+        "PSNR": 17.727147444157943,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 8,
+            "l1_weight": 10,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0005_batch_64_l1_50_dropout_0.3": {
+        "SSIM": 0.3908691591229932,
+        "PSNR": 16.912777804994043,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 64,
+            "l1_weight": 50,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.005_batch_8_l1_10_dropout_0.3": {
+        "SSIM": 0.6641607366759201,
+        "PSNR": 17.563060882003523,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 8,
+            "l1_weight": 10,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0002_batch_32_l1_200_dropout_0.5": {
+        "SSIM": 0.4924680467309623,
+        "PSNR": 17.6117572260002,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 32,
+            "l1_weight": 200,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0002_batch_32_l1_50_dropout_0.3": {
+        "SSIM": 0.5721425650448635,
+        "PSNR": 17.551683487923757,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 32,
+            "l1_weight": 50,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.001_batch_8_l1_100_dropout_0.5": {
+        "SSIM": 0.5938139393411833,
+        "PSNR": 17.893204945459487,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 8,
+            "l1_weight": 100,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0005_batch_16_l1_10_dropout_0.5": {
+        "SSIM": 0.5930413202992801,
+        "PSNR": 18.04525936210621,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 16,
+            "l1_weight": 10,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.005_batch_32_l1_200_dropout_0.1": {
+        "SSIM": 0.5295869327824692,
+        "PSNR": 16.88756409655032,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 32,
+            "l1_weight": 200,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0005_batch_16_l1_200_dropout_0.5": {
+        "SSIM": 0.5420530993362953,
+        "PSNR": 17.50720682886816,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 16,
+            "l1_weight": 200,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0002_batch_16_l1_100_dropout_0.1": {
+        "SSIM": 0.5453436580197565,
+        "PSNR": 17.805807059658076,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 16,
+            "l1_weight": 100,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.001_batch_32_l1_10_dropout_0.1": {
+        "SSIM": 0.5081515137491555,
+        "PSNR": 17.270921438981823,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 32,
+            "l1_weight": 10,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0005_batch_32_l1_100_dropout_0.1": {
+        "SSIM": 0.4495021413112509,
+        "PSNR": 16.862935196472538,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 32,
+            "l1_weight": 100,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.005_batch_16_l1_100_dropout_0.5": {
+        "SSIM": 0.6157680996533098,
+        "PSNR": 17.86210533420972,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 16,
+            "l1_weight": 100,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0005_batch_32_l1_10_dropout_0.3": {
+        "SSIM": 0.43776559829711914,
+        "PSNR": 16.890569231315972,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 32,
+            "l1_weight": 10,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0002_batch_64_l1_10_dropout_0.3": {
+        "SSIM": 0.3494710213151471,
+        "PSNR": 16.43798350902356,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 64,
+            "l1_weight": 10,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0005_batch_64_l1_200_dropout_0.3": {
+        "SSIM": 0.41500845448724155,
+        "PSNR": 16.720133263156324,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 64,
+            "l1_weight": 200,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0005_batch_8_l1_50_dropout_0.3": {
+        "SSIM": 0.6250637296972603,
+        "PSNR": 18.011887219467454,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 8,
+            "l1_weight": 50,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.001_batch_16_l1_200_dropout_0.1": {
+        "SSIM": 0.5061187240584143,
+        "PSNR": 17.23497498037705,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 16,
+            "l1_weight": 200,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.005_batch_64_l1_50_dropout_0.3": {
+        "SSIM": 0.4903029593928107,
+        "PSNR": 17.12792298557,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 64,
+            "l1_weight": 50,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.005_batch_16_l1_10_dropout_0.5": {
+        "SSIM": 0.616249694906432,
+        "PSNR": 17.097698618357928,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 16,
+            "l1_weight": 10,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0002_batch_16_l1_50_dropout_0.5": {
+        "SSIM": 0.5805473512616651,
+        "PSNR": 17.689152008650428,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 16,
+            "l1_weight": 50,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.005_batch_64_l1_100_dropout_0.3": {
+        "SSIM": 0.5050322639531103,
+        "PSNR": 16.958378885637735,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 64,
+            "l1_weight": 100,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.001_batch_32_l1_100_dropout_0.5": {
+        "SSIM": 0.5155925411602547,
+        "PSNR": 17.45118004882315,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 32,
+            "l1_weight": 100,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.001_batch_64_l1_50_dropout_0.1": {
+        "SSIM": 0.44858816985426275,
+        "PSNR": 16.7863140598288,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 64,
+            "l1_weight": 50,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.005_batch_16_l1_10_dropout_0.3": {
+        "SSIM": 0.5948112031509136,
+        "PSNR": 16.787062910334868,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 16,
+            "l1_weight": 10,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0002_batch_8_l1_200_dropout_0.1": {
+        "SSIM": 0.5862345993518829,
+        "PSNR": 17.88700937428275,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 8,
+            "l1_weight": 200,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0002_batch_16_l1_50_dropout_0.3": {
+        "SSIM": 0.5917129341898293,
+        "PSNR": 17.82053132327625,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 16,
+            "l1_weight": 50,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0005_batch_32_l1_10_dropout_0.5": {
+        "SSIM": 0.42953378681478827,
+        "PSNR": 16.81078923955329,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 32,
+            "l1_weight": 10,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0002_batch_64_l1_10_dropout_0.5": {
+        "SSIM": 0.3382032811641693,
+        "PSNR": 16.44012869119275,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 64,
+            "l1_weight": 10,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0005_batch_64_l1_200_dropout_0.5": {
+        "SSIM": 0.429654342347178,
+        "PSNR": 16.946930167508985,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 64,
+            "l1_weight": 200,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0005_batch_8_l1_50_dropout_0.5": {
+        "SSIM": 0.5696623212304609,
+        "PSNR": 17.416907449442252,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 8,
+            "l1_weight": 50,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.005_batch_64_l1_50_dropout_0.5": {
+        "SSIM": 0.45511075751534824,
+        "PSNR": 16.541949912948276,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 64,
+            "l1_weight": 50,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0002_batch_64_l1_100_dropout_0.1": {
+        "SSIM": 0.3946189089068051,
+        "PSNR": 16.810821125176528,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 64,
+            "l1_weight": 100,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0005_batch_8_l1_100_dropout_0.1": {
+        "SSIM": 0.5210179141883192,
+        "PSNR": 17.51876014591013,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 8,
+            "l1_weight": 100,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.001_batch_16_l1_10_dropout_0.1": {
+        "SSIM": 0.49923370110577553,
+        "PSNR": 17.520981368391425,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 16,
+            "l1_weight": 10,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.005_batch_64_l1_100_dropout_0.5": {
+        "SSIM": 0.5715674172187674,
+        "PSNR": 17.602886480520432,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 64,
+            "l1_weight": 100,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.001_batch_32_l1_100_dropout_0.3": {
+        "SSIM": 0.49900537112663534,
+        "PSNR": 17.124626309527407,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 32,
+            "l1_weight": 100,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0002_batch_8_l1_100_dropout_0.1": {
+        "SSIM": 0.5425152871115454,
+        "PSNR": 17.661986707108614,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 8,
+            "l1_weight": 100,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.001_batch_8_l1_50_dropout_0.1": {
+        "SSIM": 0.5828263512973128,
+        "PSNR": 17.730902487065613,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 8,
+            "l1_weight": 50,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0005_batch_64_l1_100_dropout_0.5": {
+        "SSIM": 0.3700002329102878,
+        "PSNR": 16.441144923933948,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 64,
+            "l1_weight": 100,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0002_batch_8_l1_50_dropout_0.5": {
+        "SSIM": 0.5418803023880926,
+        "PSNR": 17.18272588803076,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 8,
+            "l1_weight": 50,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0005_batch_64_l1_10_dropout_0.5": {
+        "SSIM": 0.4769669205977999,
+        "PSNR": 17.216846901865278,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 64,
+            "l1_weight": 10,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0002_batch_64_l1_200_dropout_0.1": {
+        "SSIM": 0.4401322330894141,
+        "PSNR": 16.719543637126876,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 64,
+            "l1_weight": 200,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.005_batch_8_l1_50_dropout_0.5": {
+        "SSIM": 0.6076739019361036,
+        "PSNR": 16.896358153189873,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 8,
+            "l1_weight": 50,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0002_batch_32_l1_10_dropout_0.5": {
+        "SSIM": 0.43970011534362,
+        "PSNR": 17.033499934226413,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 32,
+            "l1_weight": 10,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.005_batch_32_l1_50_dropout_0.5": {
+        "SSIM": 0.5166664205748459,
+        "PSNR": 17.066363671094493,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 32,
+            "l1_weight": 50,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.001_batch_32_l1_200_dropout_0.3": {
+        "SSIM": 0.5340843673410087,
+        "PSNR": 17.255354135083046,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 32,
+            "l1_weight": 200,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.005_batch_64_l1_200_dropout_0.5": {
+        "SSIM": 0.42346766385538825,
+        "PSNR": 16.88414629017547,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 64,
+            "l1_weight": 200,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0005_batch_16_l1_50_dropout_0.3": {
+        "SSIM": 0.538420597027088,
+        "PSNR": 17.320941065560785,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 16,
+            "l1_weight": 50,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0005_batch_8_l1_200_dropout_0.1": {
+        "SSIM": 0.5749696667852073,
+        "PSNR": 17.84242497465098,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 8,
+            "l1_weight": 200,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.001_batch_16_l1_100_dropout_0.1": {
+        "SSIM": 0.5725398669982779,
+        "PSNR": 17.685707097980536,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 16,
+            "l1_weight": 100,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.001_batch_32_l1_50_dropout_0.1": {
+        "SSIM": 0.5213306977831084,
+        "PSNR": 17.31912644462391,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 32,
+            "l1_weight": 50,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0005_batch_64_l1_100_dropout_0.3": {
+        "SSIM": 0.4780771588457042,
+        "PSNR": 17.438661811056434,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 64,
+            "l1_weight": 100,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.001_batch_32_l1_200_dropout_0.5": {
+        "SSIM": 0.5103028426910269,
+        "PSNR": 17.469211855259555,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 32,
+            "l1_weight": 200,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.005_batch_64_l1_200_dropout_0.3": {
+        "SSIM": 0.3766708291810134,
+        "PSNR": 16.37966927206292,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 64,
+            "l1_weight": 200,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0005_batch_16_l1_50_dropout_0.5": {
+        "SSIM": 0.5791745781898499,
+        "PSNR": 17.7113344129208,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 16,
+            "l1_weight": 50,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0005_batch_64_l1_10_dropout_0.3": {
+        "SSIM": 0.36991572585599175,
+        "PSNR": 16.59205303481891,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 64,
+            "l1_weight": 10,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0002_batch_8_l1_50_dropout_0.3": {
+        "SSIM": 0.5907119790027882,
+        "PSNR": 17.860202429124538,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 8,
+            "l1_weight": 50,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.005_batch_8_l1_50_dropout_0.3": {
+        "SSIM": 0.5952490999780852,
+        "PSNR": 17.021145957295452,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 8,
+            "l1_weight": 50,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0002_batch_32_l1_10_dropout_0.3": {
+        "SSIM": 0.5562519852457375,
+        "PSNR": 17.743728201528686,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 32,
+            "l1_weight": 10,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.005_batch_32_l1_50_dropout_0.3": {
+        "SSIM": 0.6022185601037124,
+        "PSNR": 17.060870380727714,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 32,
+            "l1_weight": 50,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0002_batch_16_l1_10_dropout_0.1": {
+        "SSIM": 0.30576765331728706,
+        "PSNR": 16.216874167793318,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 16,
+            "l1_weight": 10,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.005_batch_16_l1_50_dropout_0.1": {
+        "SSIM": 0.46071951142672835,
+        "PSNR": 17.259564868146217,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 16,
+            "l1_weight": 50,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.005_batch_8_l1_200_dropout_0.3": {
+        "SSIM": 0.5452743326795513,
+        "PSNR": 17.06709562430034,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 8,
+            "l1_weight": 200,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0002_batch_16_l1_200_dropout_0.5": {
+        "SSIM": 0.5579262889664749,
+        "PSNR": 17.815561841211,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 16,
+            "l1_weight": 200,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.005_batch_16_l1_200_dropout_0.1": {
+        "SSIM": 0.5289685921422367,
+        "PSNR": 17.227043639389915,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 16,
+            "l1_weight": 200,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0005_batch_32_l1_200_dropout_0.5": {
+        "SSIM": 0.39177203795005533,
+        "PSNR": 16.69381893236436,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 32,
+            "l1_weight": 200,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.001_batch_64_l1_10_dropout_0.5": {
+        "SSIM": 0.581069919569739,
+        "PSNR": 17.627032441338425,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 64,
+            "l1_weight": 10,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0002_batch_32_l1_100_dropout_0.1": {
+        "SSIM": 0.5428687179910725,
+        "PSNR": 17.43521310693699,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 32,
+            "l1_weight": 100,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0005_batch_16_l1_100_dropout_0.1": {
+        "SSIM": 0.5857523320050075,
+        "PSNR": 17.932898890266387,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 16,
+            "l1_weight": 100,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.005_batch_32_l1_100_dropout_0.5": {
+        "SSIM": 0.5563393142716638,
+        "PSNR": 17.008956763421995,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 32,
+            "l1_weight": 100,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.001_batch_64_l1_100_dropout_0.3": {
+        "SSIM": 0.48474947029146653,
+        "PSNR": 16.961451126471296,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 64,
+            "l1_weight": 100,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.001_batch_8_l1_200_dropout_0.1": {
+        "SSIM": 0.61066433479046,
+        "PSNR": 17.83394868856543,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 8,
+            "l1_weight": 200,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.001_batch_16_l1_50_dropout_0.3": {
+        "SSIM": 0.5409078084189316,
+        "PSNR": 17.22455098206811,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 16,
+            "l1_weight": 50,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0005_batch_8_l1_10_dropout_0.1": {
+        "SSIM": 0.6389117857505535,
+        "PSNR": 17.97871442893174,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 8,
+            "l1_weight": 10,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.005_batch_64_l1_10_dropout_0.1": {
+        "SSIM": 0.48888764504728643,
+        "PSNR": 16.4970220513533,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 64,
+            "l1_weight": 10,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0005_batch_32_l1_200_dropout_0.3": {
+        "SSIM": 0.43857949663852824,
+        "PSNR": 16.819176849086777,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 32,
+            "l1_weight": 200,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0005_batch_32_l1_50_dropout_0.1": {
+        "SSIM": 0.41470548305018196,
+        "PSNR": 16.982201558226198,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 32,
+            "l1_weight": 50,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0002_batch_64_l1_50_dropout_0.1": {
+        "SSIM": 0.4635157122694213,
+        "PSNR": 16.685949679414865,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 64,
+            "l1_weight": 50,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.005_batch_8_l1_200_dropout_0.5": {
+        "SSIM": 0.6576012537397188,
+        "PSNR": 17.632343168533197,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 8,
+            "l1_weight": 200,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0002_batch_16_l1_200_dropout_0.3": {
+        "SSIM": 0.582249776042741,
+        "PSNR": 17.74491987478205,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 16,
+            "l1_weight": 200,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.005_batch_32_l1_100_dropout_0.3": {
+        "SSIM": 0.5961201057351869,
+        "PSNR": 17.244879753137422,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 32,
+            "l1_weight": 100,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.001_batch_64_l1_100_dropout_0.5": {
+        "SSIM": 0.5316798121764742,
+        "PSNR": 17.506542842009704,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 64,
+            "l1_weight": 100,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.001_batch_16_l1_50_dropout_0.5": {
+        "SSIM": 0.45150176512783974,
+        "PSNR": 17.088947103193156,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 16,
+            "l1_weight": 50,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.001_batch_64_l1_10_dropout_0.3": {
+        "SSIM": 0.5267951211024975,
+        "PSNR": 17.537724099172753,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 64,
+            "l1_weight": 10,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.001_batch_32_l1_10_dropout_0.3": {
+        "SSIM": 0.5908956743519882,
+        "PSNR": 17.67452442155782,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 32,
+            "l1_weight": 10,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0005_batch_32_l1_100_dropout_0.3": {
+        "SSIM": 0.5206627660784228,
+        "PSNR": 17.29316528930533,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 32,
+            "l1_weight": 100,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.001_batch_8_l1_10_dropout_0.5": {
+        "SSIM": 0.6258567962153204,
+        "PSNR": 18.397153778450264,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 8,
+            "l1_weight": 10,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0002_batch_16_l1_100_dropout_0.3": {
+        "SSIM": 0.5701264040223484,
+        "PSNR": 17.736229781004702,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 16,
+            "l1_weight": 100,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.005_batch_8_l1_100_dropout_0.5": {
+        "SSIM": 0.6339627257708845,
+        "PSNR": 17.245331020737847,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 8,
+            "l1_weight": 100,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.001_batch_64_l1_200_dropout_0.5": {
+        "SSIM": 0.40983934238039216,
+        "PSNR": 17.01330606707929,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 64,
+            "l1_weight": 200,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.005_batch_32_l1_200_dropout_0.3": {
+        "SSIM": 0.5258772876755945,
+        "PSNR": 17.124312376818395,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 32,
+            "l1_weight": 200,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.005_batch_32_l1_10_dropout_0.1": {
+        "SSIM": 0.5212220076856942,
+        "PSNR": 16.526608257114326,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 32,
+            "l1_weight": 10,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.005_batch_8_l1_10_dropout_0.1": {
+        "SSIM": 0.6569060436610518,
+        "PSNR": 17.247148276412855,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 8,
+            "l1_weight": 10,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0002_batch_8_l1_10_dropout_0.1": {
+        "SSIM": 0.5924552812658507,
+        "PSNR": 17.939673980172007,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 8,
+            "l1_weight": 10,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0005_batch_64_l1_50_dropout_0.1": {
+        "SSIM": 0.40002096315910074,
+        "PSNR": 16.794441919777032,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 64,
+            "l1_weight": 50,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0002_batch_32_l1_50_dropout_0.1": {
+        "SSIM": 0.5289130241706453,
+        "PSNR": 17.62296789127316,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 32,
+            "l1_weight": 50,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0002_batch_16_l1_100_dropout_0.5": {
+        "SSIM": 0.3872715799972929,
+        "PSNR": 16.26352373878603,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 16,
+            "l1_weight": 100,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.005_batch_8_l1_100_dropout_0.3": {
+        "SSIM": 0.7025186583913606,
+        "PSNR": 17.84769895319543,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 8,
+            "l1_weight": 100,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.001_batch_32_l1_10_dropout_0.5": {
+        "SSIM": 0.49571678761778204,
+        "PSNR": 17.59350224471445,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 32,
+            "l1_weight": 10,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0005_batch_32_l1_100_dropout_0.5": {
+        "SSIM": 0.531160845838744,
+        "PSNR": 17.333266371121272,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 32,
+            "l1_weight": 100,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.005_batch_16_l1_100_dropout_0.1": {
+        "SSIM": 0.5597961894397078,
+        "PSNR": 17.1847592839211,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 16,
+            "l1_weight": 100,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.001_batch_8_l1_10_dropout_0.3": {
+        "SSIM": 0.6284188895389952,
+        "PSNR": 17.942162771592002,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 8,
+            "l1_weight": 10,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0002_batch_32_l1_200_dropout_0.1": {
+        "SSIM": 0.49838012970727064,
+        "PSNR": 17.346840088981477,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 32,
+            "l1_weight": 200,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.001_batch_8_l1_100_dropout_0.1": {
+        "SSIM": 0.6055369890969375,
+        "PSNR": 18.001001291596225,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 8,
+            "l1_weight": 100,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.001_batch_64_l1_200_dropout_0.3": {
+        "SSIM": 0.4574032836946948,
+        "PSNR": 17.093900805180134,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 64,
+            "l1_weight": 200,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.005_batch_32_l1_200_dropout_0.5": {
+        "SSIM": 0.6100617153891201,
+        "PSNR": 16.64051912309393,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 32,
+            "l1_weight": 200,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0005_batch_16_l1_10_dropout_0.1": {
+        "SSIM": 0.5356106799224327,
+        "PSNR": 17.156498529802,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 16,
+            "l1_weight": 10,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0005_batch_16_l1_200_dropout_0.1": {
+        "SSIM": 0.5863884255803865,
+        "PSNR": 17.511288510488512,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 16,
+            "l1_weight": 200,
+            "dropout_rate": 0.1
+        }
+    }
+}
