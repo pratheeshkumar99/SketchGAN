@@ -57,9 +57,7 @@ if __name__ == "__main__":
 
 """
 Grid Search Hyperparameter Tuning Results:
-
 Summary of Top Performing Models Based on Both SSIM and PSNR:
-
 | Model ID | Learning Rate | Batch Size | L1 Weight | Dropout Rate | SSIM  | PSNR  | Overview                                      |
 |----------|---------------|------------|-----------|--------------|-------|-------|----------------------------------------------|
 | 1        | 0.005         | 8          | 100       | 0.1          | 0.6858| 18.06 | Best overall, excellent balance and reduction|
@@ -77,9 +75,7 @@ Top Five Based on SSIM (Structural Similarity Index):
 | 3    | 0.005         | 8          | 10        | 0.5          | 0.6549| 17.11 |
 | 4    | 0.005         | 8          | 50        | 0.3          | 0.6642| 17.56 |
 | 5    | 0.005         | 8          | 10        | 0.1          | 0.6569| 17.25 |
-
 Top Five Based on PSNR (Peak Signal-to-Noise Ratio):
-
 | Rank | Learning Rate | Batch Size | L1 Weight | Dropout Rate | SSIM  | PSNR  |
 |------|---------------|------------|-----------|--------------|-------|-------|
 | 1    | 0.001         | 8          | 10        | 0.5          | 0.6259| 18.40 |
