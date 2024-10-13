@@ -39,4 +39,4 @@ If you encounter any issues while downloading or using the models, please check 
 - Verify that the downloaded files are complete and not corrupted.
 - Check that your environment meets all the dependencies required to run the model.
 
-For more support, feel free to open an issue in this repository or contact [Your Contact Information].
+For more support, feel free to open an issue in this repository or contact lnu.prat@northeastern.edu.
