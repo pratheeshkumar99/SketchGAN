@@ -3,24 +3,43 @@ import torch.optim as optim
 import torch.nn as nn
 import argparse
 import os
-from dataloader import create_dataloaders
-from models.unetgenerator import UNetGenerator
-from models.patchgandiscriminator import PatchGANDiscriminator
+from dataset_loader import create_dataloaders
+from models.unet_generator import UNetGenerator
+from models.patchgan_discriminator import PatchGANDiscriminator
+from evaluate import evaluate_model
 
 # Argument parser for flexible inputs
 def parse_args():
     parser = argparse.ArgumentParser(description="Train a GAN for sketch-to-image generation.")
-    parser.add_argument('--sketch_dir', type=str, required=True, help='Path to the sketches directory.')
-    parser.add_argument('--photo_dir', type=str, required=True, help='Path to the photos directory.')
+    parser.add_argument('--sketch_dir', type=str, default="Data/raw/sketches", required=False, help='Path to the sketches directory.')
+    parser.add_argument('--photo_dir', type=str, default="Data/raw/portraits", required=False, help='Path to the photos directory.')
     parser.add_argument('--batch_size', type=int, default=16, help='Batch size for training.')
     parser.add_argument('--num_epochs', type=int, default=50, help='Number of epochs to train.')
-    parser.add_argument('--lr', type=float, default=0.0002, help='Learning rate for optimizer.')
-    parser.add_argument('--save_path', type=str, default='./models', help='Path to save the trained models.')
+    parser.add_argument('--lr', type=float, default=0.0002, help='learning rate for generator and discriminator')   
+    parser.add_argument('--save_path', type=str, default='savemodels', help='Path to save the trained models.')
     parser.add_argument('--patience', type=int, default=10, help='Patience for early stopping.')
+    parser.add_argument('--experiment_name', type=str, default='experiment', help='Name of the experiment.')
+    parser.add_argument('--dropout', type=float, default=0.5, help='Dropout value for the generator and discriminator.')
+    parser.add_argument('--verbose', type=bool, default=True, help='Toggle verbose output.')
+    
     return parser.parse_args()
 
+
+def create_experiment_folder(experiment_name, save_path):
+    if not os.path.exists(save_path):
+        os.makedirs(save_path)
+    experiment_folder = os.path.join(save_path, experiment_name) 
+    if not os.path.exists(experiment_folder):
+        os.makedirs(experiment_folder)        
+    return experiment_folder
+
 # Main training function
-def train(args):
+def train(sketch_dir, photo_dir, batch_size, num_epochs, lr, save_path, patience, experiment_name, dropout,verbose=True):
+    print("Starting training...")
+
+  
+
+
     # Set up device: use GPU if available, otherwise CPU
     if torch.cuda.is_available():
         device = torch.device("cuda")
@@ -33,29 +52,31 @@ def train(args):
         print(f"Using device: {device} (CPU)")
 
     # Create dataloaders
-    train_loader, val_loader, test_loader = create_dataloaders(args.sketch_dir, args.photo_dir, args.batch_size)
+
+
+    train_loader, val_loader, test_loader = create_dataloaders(sketch_dir, photo_dir, batch_size)
 
     # Initialize models
-    generator = UNetGenerator().to(device)
-    discriminator = PatchGANDiscriminator().to(device)
+    generator = UNetGenerator(dropout_value=dropout).to(device)
+    discriminator = PatchGANDiscriminator(dropout_value=dropout).to(device)
 
     # Loss functions
     criterion_GAN = nn.BCEWithLogitsLoss()  # For adversarial loss
     criterion_L1 = nn.L1Loss()  # For pixel-level similarity
 
     # Optimizers
-    optimizer_G = optim.Adam(generator.parameters(), lr=args.lr, betas=(0.5, 0.999))
-    optimizer_D = optim.Adam(discriminator.parameters(), lr=args.lr, betas=(0.5, 0.999))
+    optimizer_G = optim.Adam(generator.parameters(), lr=lr, betas=(0.5, 0.999))
+    optimizer_D = optim.Adam(discriminator.parameters(), lr=lr, betas=(0.5, 0.999))
 
     # Training settings
     best_val_loss = float("inf")
     patience_counter = 0
 
-    # Create directory to save models if not exists
-    os.makedirs(args.save_path, exist_ok=True)
+    save_path = create_experiment_folder(experiment_name, save_path)
+    print(f"Saving models to: {save_path}")
 
     # Training loop
-    for epoch in range(args.num_epochs):
+    for epoch in range(num_epochs):
         generator.train()
         discriminator.train()
 
@@ -103,8 +124,9 @@ def train(args):
             total_g_loss += loss_G.item()
             total_d_loss += loss_D.item()
 
-            print(f"[Epoch {epoch}/{args.num_epochs}] [Batch {i}/{len(train_loader)}] "
-                  f"[D loss: {loss_D.item():.4f}] [G loss: {loss_G.item():.4f}]")
+            if verbose:
+                print(f"[Epoch {epoch}/{num_epochs}] [Batch {i}/{len(train_loader)}] "
+                    f"[D loss: {loss_D.item():.4f}] [G loss: {loss_G.item():.4f}]")
 
         # === Validation Phase ===
         generator.eval()
@@ -120,6 +142,7 @@ def train(args):
                 # Calculate validation L1 loss
                 val_loss += criterion_L1(val_fake_images, val_real_images).item()
 
+        # if verbose:
         val_loss /= len(val_loader)
         print(f"Validation Loss: {val_loss:.4f}")
 
@@ -128,15 +151,38 @@ def train(args):
             best_val_loss = val_loss
             patience_counter = 0
             # Save the best model
-            torch.save(generator.state_dict(), os.path.join(args.save_path, "best_generator.pth"))
-            torch.save(discriminator.state_dict(), os.path.join(args.save_path, "best_discriminator.pth"))
-            print(f"Model saved at epoch {epoch} with validation loss: {val_loss:.4f}")
+            torch.save(generator.state_dict(), os.path.join(save_path, "best_generator.pth"))
+            torch.save(discriminator.state_dict(), os.path.join(save_path, "best_discriminator.pth"))
+            print(f"Model saved at epoch {epoch} with validation loss: {val_loss:.4f} at {save_path}")
         else:
             patience_counter += 1
-            if patience_counter >= args.patience:
+            if patience_counter >= patience:
                 print(f"Early stopping triggered at epoch {epoch}")
                 break
 
-if __name__ == "__main__":
+    # Evaluate the best model on the test set
+    generator.load_state_dict(torch.load(os.path.join(save_path, "best_generator.pth")))
+    generator.eval()
+
+    SSIM, PSNR = evaluate_model(generator, test_loader, device)
+
+    return SSIM, PSNR
+
+# Handle both direct parameter passing and command-line argument passing
+def main():
     args = parse_args()
-    train(args)
+    train(
+        sketch_dir=args.sketch_dir,
+        photo_dir=args.photo_dir,
+        batch_size=args.batch_size,
+        num_epochs=args.num_epochs,
+        lr=args.lr,
+        save_path=args.save_path,
+        patience=args.patience,
+        experiment_name=args.experiment_name,
+        dropout=args.dropout,
+        verbose=args.verbose
+    )
+
+if __name__ == "__main__":
+    main()

@@ -69,6 +69,8 @@ def evaluate_model(generator, test_loader, device):
     print(f"Average SSIM: {avg_ssim:.4f}")
     print(f"Average PSNR: {avg_psnr:.4f}")
 
+    return avg_ssim, avg_psnr
+
 if __name__ == "__main__":
     # Argument parser for passing arguments to the script
     parser = argparse.ArgumentParser()

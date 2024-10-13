@@ -3,7 +3,7 @@ import torch.nn as nn
 
 # U-Net Generator
 class UNetGenerator(nn.Module):
-    def __init__(self):
+    def __init__(self, dropout_value=0.5):
         super(UNetGenerator, self).__init__()
 
         # Define downsampling (encoder) blocks
@@ -16,9 +16,9 @@ class UNetGenerator(nn.Module):
         self.down7 = self.conv_block(512, 512, normalization=False)
 
         # Define upsampling (decoder) blocks with skip connections
-        self.up1 = self.upconv_block(512, 512, dropout=True)
-        self.up2 = self.upconv_block(1024, 512, dropout=True)
-        self.up3 = self.upconv_block(1024, 512, dropout=True)
+        self.up1 = self.upconv_block(512, 512, dropout_value=dropout_value)
+        self.up2 = self.upconv_block(1024, 512, dropout_value=dropout_value)
+        self.up3 = self.upconv_block(1024, 512, dropout_value=dropout_value)
         self.up4 = self.upconv_block(1024, 256)
         self.up5 = self.upconv_block(512, 128)
         self.up6 = self.upconv_block(256, 64)
@@ -38,14 +38,14 @@ class UNetGenerator(nn.Module):
             layers.append(nn.BatchNorm2d(out_channels))
         return nn.Sequential(*layers)
 
-    def upconv_block(self, in_channels, out_channels, dropout=False):
+    def upconv_block(self, in_channels, out_channels, dropout_value=0.0):
         layers = [
             nn.ConvTranspose2d(in_channels, out_channels, kernel_size=4, stride=2, padding=1, bias=False),
             nn.ReLU(True),
             nn.BatchNorm2d(out_channels)
         ]
-        if dropout:
-            layers.append(nn.Dropout(0.5))
+        if dropout_value > 0.0:
+            layers.append(nn.Dropout(dropout_value))  # Apply the dropout value here
         return nn.Sequential(*layers)
 
     def forward(self, x):
