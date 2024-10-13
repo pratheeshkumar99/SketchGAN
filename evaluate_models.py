@@ -55,85 +55,36 @@ if __name__ == "__main__":
     evaluate_all_models(args.root_dir, args.sketch_dir, args.photo_dir)
 
 
+"""
+Grid Search Hyperparameter Tuning Results:
 
-#grid search for hyperparameter tuning Results:
+Summary of Top Performing Models Based on Both SSIM and PSNR:
 
-# summary of the models that perform well in both SSIM and PSNR:
+| Model ID | Learning Rate | Batch Size | L1 Weight | Dropout Rate | SSIM  | PSNR  | Overview                                      |
+|----------|---------------|------------|-----------|--------------|-------|-------|----------------------------------------------|
+| 1        | 0.005         | 8          | 100       | 0.1          | 0.6858| 18.06 | Best overall, excellent balance and reduction|
+| 2        | 0.001         | 8          | 10        | 0.5          | 0.6259| 18.40 | Strong in both metrics, high image quality   |
+| 3        | 0.005         | 8          | 10        | 0.5          | 0.6549| 17.11 | Good image similarity with reasonable noise  |
+| 4        | 0.001         | 8          | 100       | 0.1          | 0.6055| 18.00 | Well-balanced, effective in fidelity & noise |
+| 5        | 0.005         | 8          | 50        | 0.1          | 0.6569| 17.25 | Strong performance, good overall quality     |
 
-    # 	1.	lr_0.005_batch_8_l1_100_dropout_0.1
-	# •	SSIM: 0.6858 (Top in SSIM)
-	# •	PSNR: 18.06 (Top in PSNR)
-	# •	Params: lr=0.005, batch_size=8, l1_weight=100, dropout_rate=0.1
-	# •	Overview: Best overall in both metrics, showing excellent balance between similarity and noise reduction.
-	# 2.	lr_0.001_batch_8_l1_10_dropout_0.5
-	# •	SSIM: 0.6259
-	# •	PSNR: 18.40 (Top in PSNR)
-	# •	Params: lr=0.001, batch_size=8, l1_weight=10, dropout_rate=0.5
-	# •	Overview: Strong in both metrics, especially in PSNR, making it excellent for maintaining high image quality.
-	# 3.	lr_0.005_batch_8_l1_10_dropout_0.5
-	# •	SSIM: 0.6549
-	# •	PSNR: 17.11
-	# •	Params: lr=0.005, batch_size=8, l1_weight=10, dropout_rate=0.5
-	# •	Overview: High SSIM score and decent PSNR, indicating good image similarity with reasonable noise reduction.
-	# 4.	lr_0.001_batch_8_l1_100_dropout_0.1
-	# •	SSIM: 0.6055
-	# •	PSNR: 18.00 (Top in PSNR)
-	# •	Params: lr=0.001, batch_size=8, l1_weight=100, dropout_rate=0.1
-	# •	Overview: Well-balanced with high scores in both metrics, demonstrating effectiveness in both image fidelity and noise handling.
-	# 5.	lr_0.005_batch_8_l1_50_dropout_0.1
-	# •	SSIM: 0.6569
-	# •	PSNR: 17.25
-	# •	Params: lr=0.005, batch_size=8, l1_weight=50, dropout_rate=0.1
-	# •	Overview: Strong performance in both metrics, indicating good overall image quality and similarity.
+Top Five Based on SSIM (Structural Similarity Index):
 
+| Rank | Learning Rate | Batch Size | L1 Weight | Dropout Rate | SSIM  | PSNR  |
+|------|---------------|------------|-----------|--------------|-------|-------|
+| 1    | 0.005         | 8          | 200       | 0.3          | 0.7025| 17.85 |
+| 2    | 0.005         | 8          | 100       | 0.1          | 0.6858| 18.06 |
+| 3    | 0.005         | 8          | 10        | 0.5          | 0.6549| 17.11 |
+| 4    | 0.005         | 8          | 50        | 0.3          | 0.6642| 17.56 |
+| 5    | 0.005         | 8          | 10        | 0.1          | 0.6569| 17.25 |
 
+Top Five Based on PSNR (Peak Signal-to-Noise Ratio):
 
-    # Top Five Based on SSIM (Structural Similarity Index)
-
-	# 1.	lr_0.005_batch_8_l1_200_dropout_0.3
-	# •	SSIM: 0.7025
-	# •	PSNR: 17.85
-	# •	Params: lr=0.005, batch_size=8, l1_weight=200, dropout_rate=0.3
-	# 2.	lr_0.005_batch_8_l1_100_dropout_0.1
-	# •	SSIM: 0.6858
-	# •	PSNR: 18.06
-	# •	Params: lr=0.005, batch_size=8, l1_weight=100, dropout_rate=0.1
-	# 3.	lr_0.005_batch_8_l1_10_dropout_0.5
-	# •	SSIM: 0.6549
-	# •	PSNR: 17.11
-	# •	Params: lr=0.005, batch_size=8, l1_weight=10, dropout_rate=0.5
-	# 4.	lr_0.005_batch_8_l1_50_dropout_0.3
-	# •	SSIM: 0.6642
-	# •	PSNR: 17.56
-	# •	Params: lr=0.005, batch_size=8, l1_weight=50, dropout_rate=0.3
-	# 5.	lr_0.005_batch_8_l1_10_dropout_0.1
-	# •	SSIM: 0.6569
-	# •	PSNR: 17.25
-	# •	Params: lr=0.005, batch_size=8, l1_weight=10, dropout_rate=0.1
-
-
-
-
-
-# Top Five Based on PSNR (Peak Signal-to-Noise Ratio)
-
-# 	1.	lr_0.001_batch_8_l1_10_dropout_0.5
-# 	•	SSIM: 0.6259
-# 	•	PSNR: 18.40
-# 	•	Params: lr=0.001, batch_size=8, l1_weight=10, dropout_rate=0.5
-# 	2.	lr_0.005_batch_8_l1_100_dropout_0.1
-# 	•	SSIM: 0.6858
-# 	•	PSNR: 18.06
-# 	•	Params: lr=0.005, batch_size=8, l1_weight=100, dropout_rate=0.1
-# 	3.	lr_0.001_batch_8_l1_100_dropout_0.1
-# 	•	SSIM: 0.6055
-# 	•	PSNR: 18.00
-# 	•	Params: lr=0.001, batch_size=8, l1_weight=100, dropout_rate=0.1
-# 	4.	lr_0.0002_batch_16_l1_10_dropout_0.5
-# 	•	SSIM: 0.6031
-# 	•	PSNR: 18.01
-# 	•	Params: lr=0.0002, batch_size=16, l1_weight=10, dropout_rate=0.5
-# 	5.	lr_0.0005_batch_8_l1_10_dropout_0.3
-# 	•	SSIM: 0.5591
-# 	•	PSNR: 18.24
-# 	•	Params: lr=0.0005, batch_size=8, l1_weight=10, dropout_rate=0.3
+| Rank | Learning Rate | Batch Size | L1 Weight | Dropout Rate | SSIM  | PSNR  |
+|------|---------------|------------|-----------|--------------|-------|-------|
+| 1    | 0.001         | 8          | 10        | 0.5          | 0.6259| 18.40 |
+| 2    | 0.005         | 8          | 100       | 0.1          | 0.6858| 18.06 |
+| 3    | 0.001         | 8          | 100       | 0.1          | 0.6055| 18.00 |
+| 4    | 0.0002        | 16         | 10        | 0.5          | 0.6031| 18.01 |
+| 5    | 0.0005        | 8          | 10        | 0.3          | 0.5591| 18.24 |
+"""
