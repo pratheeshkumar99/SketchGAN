@@ -12,15 +12,15 @@ Here is a list of the available models along with their corresponding hyperparam
 
 1. **Model with lr=0.005, batch_size=8, l1_weight=100, dropout_rate=0.1**
    - **Description**: This model achieved the highest performance in our tests, showing excellent balance between similarity and noise reduction.
-   - **Google Drive Link**: [Download Model](https://drive.google.com/path_to_model_file)
+   - **Google Drive Link**: [Download Model](https://drive.google.com/drive/folders/1INPnHaby9jZZUpLsL0K1skMNQ0YX5jbE?usp=drive_link)
    
 2. **Model with lr=0.001, batch_size=8, l1_weight=10, dropout_rate=0.5**
    - **Description**: Strong in both SSIM and PSNR metrics, excellent for maintaining high image quality.
-   - **Google Drive Link**: [Download Model](https://drive.google.com/path_to_model_file)
+   - **Google Drive Link**: [Download Model](https://drive.google.com/drive/folders/1-0lGv7r1zxtROls2EO8GgpKuT0ckxbaa?usp=drive_link)
 
 3. **Model with lr=0.005, batch_size=8, l1_weight=10, dropout_rate=0.5**
    - **Description**: High SSIM score and decent PSNR, indicating good image similarity with reasonable noise reduction.
-   - **Google Drive Link**: [Download Model](https://drive.google.com/path_to_model_file)
+   - **Google Drive Link**: [Download Model](https://drive.google.com/drive/folders/1ZpMIGWklQqDT6neDr9jRiwI_8xhCe7Zw?usp=drive_link)
 
 ### How to Use the Models
 
