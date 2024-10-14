@@ -1,0 +1,434 @@
+{
+    "lr_0.0005_batch_8_l1_dropout_0.1": {
+        "SSIM": 0.7033316924654204,
+        "PSNR": 22.28482009941226,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 8,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0002_batch_32_l1_dropout_0.5": {
+        "SSIM": 0.6884071970808094,
+        "PSNR": 22.21696605266824,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 32,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0005_batch_64_l1_dropout_0.1": {
+        "SSIM": 0.47137312436925954,
+        "PSNR": 19.70796640259852,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 64,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.005_batch_8_l1_dropout_0.1": {
+        "SSIM": 0.7735816178650692,
+        "PSNR": 21.165065171391834,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 8,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0002_batch_32_l1_dropout_0.3": {
+        "SSIM": 0.6468358533135776,
+        "PSNR": 20.90433044237492,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 32,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0002_batch_8_l1_dropout_0.1": {
+        "SSIM": 0.7428706288337708,
+        "PSNR": 22.902635987082252,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 8,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0002_batch_16_l1_dropout_0.1": {
+        "SSIM": 0.6275272533811372,
+        "PSNR": 21.643568940699023,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 16,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.005_batch_64_l1_dropout_0.1": {
+        "SSIM": 0.5085370314532313,
+        "PSNR": 19.48252767749948,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 64,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.001_batch_8_l1_dropout_0.1": {
+        "SSIM": 0.7246460051372133,
+        "PSNR": 22.77036431104273,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 8,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.001_batch_64_l1_dropout_0.1": {
+        "SSIM": 0.5921071788360333,
+        "PSNR": 20.55708376127412,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 64,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0005_batch_16_l1_dropout_0.1": {
+        "SSIM": 0.6590836191999501,
+        "PSNR": 22.048552651606812,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 16,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0005_batch_32_l1_dropout_0.3": {
+        "SSIM": 0.7061164111926638,
+        "PSNR": 22.18410768285389,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 32,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.005_batch_32_l1_dropout_0.5": {
+        "SSIM": 0.7375371106739702,
+        "PSNR": 20.33317082954673,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 32,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0002_batch_64_l1_dropout_0.1": {
+        "SSIM": 0.5928177936323757,
+        "PSNR": 20.65633253333126,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 64,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.005_batch_16_l1_dropout_0.1": {
+        "SSIM": 0.6120321072381119,
+        "PSNR": 19.777770274987486,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 16,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.005_batch_32_l1_dropout_0.3": {
+        "SSIM": 0.6640869358490253,
+        "PSNR": 19.897559252425406,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 32,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0005_batch_32_l1_dropout_0.5": {
+        "SSIM": 0.6972763723340528,
+        "PSNR": 21.361715804830283,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 32,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.001_batch_32_l1_dropout_0.5": {
+        "SSIM": 0.6521981379081463,
+        "PSNR": 21.261350192875195,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 32,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.001_batch_32_l1_dropout_0.3": {
+        "SSIM": 0.5478790042729214,
+        "PSNR": 19.77252474748256,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 32,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.001_batch_16_l1_dropout_0.1": {
+        "SSIM": 0.6739955565025066,
+        "PSNR": 20.44623376128695,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 16,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0005_batch_64_l1_dropout_0.5": {
+        "SSIM": 0.5988756623761408,
+        "PSNR": 20.552308774450736,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 64,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0002_batch_16_l1_dropout_0.3": {
+        "SSIM": 0.6645420789718628,
+        "PSNR": 21.870695734783176,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 16,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.005_batch_8_l1_dropout_0.5": {
+        "SSIM": 0.5409438743673521,
+        "PSNR": 19.403419999960065,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 8,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.005_batch_64_l1_dropout_0.3": {
+        "SSIM": 0.4617417506102858,
+        "PSNR": 18.909951527432213,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 64,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0002_batch_8_l1_dropout_0.3": {
+        "SSIM": 0.8012837315427845,
+        "PSNR": 23.243304476718027,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 8,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0005_batch_8_l1_dropout_0.5": {
+        "SSIM": 0.5406547168205524,
+        "PSNR": 20.029334585813128,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 8,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0002_batch_32_l1_dropout_0.1": {
+        "SSIM": 0.6334486480416923,
+        "PSNR": 21.811370195461745,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 32,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0002_batch_16_l1_dropout_0.5": {
+        "SSIM": 0.5793047136273878,
+        "PSNR": 21.012007928926376,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 16,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.005_batch_8_l1_dropout_0.3": {
+        "SSIM": 0.643869790537604,
+        "PSNR": 19.735597948606774,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 8,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.005_batch_64_l1_dropout_0.5": {
+        "SSIM": 0.2864606041332771,
+        "PSNR": 14.713825706399822,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 64,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0005_batch_64_l1_dropout_0.3": {
+        "SSIM": 0.48260948061943054,
+        "PSNR": 19.224056657127804,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 64,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0005_batch_8_l1_dropout_0.3": {
+        "SSIM": 0.7890897680973185,
+        "PSNR": 22.829743735518115,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 8,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0002_batch_8_l1_dropout_0.5": {
+        "SSIM": 0.7360090592811848,
+        "PSNR": 22.590754960092102,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 8,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.001_batch_8_l1_dropout_0.5": {
+        "SSIM": 0.6935281178046917,
+        "PSNR": 21.59944214737053,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 8,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.001_batch_64_l1_dropout_0.3": {
+        "SSIM": 0.6298470538237999,
+        "PSNR": 20.952749274753458,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 64,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.001_batch_8_l1_dropout_0.3": {
+        "SSIM": 0.5644969015285887,
+        "PSNR": 20.55612239809496,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 8,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.001_batch_64_l1_dropout_0.5": {
+        "SSIM": 0.547216410266942,
+        "PSNR": 19.760154884574852,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 64,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.005_batch_32_l1_dropout_0.1": {
+        "SSIM": 0.5165247783578676,
+        "PSNR": 18.27545762835244,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 32,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0005_batch_16_l1_dropout_0.5": {
+        "SSIM": 0.6336661227818193,
+        "PSNR": 21.721925798007522,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 16,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0002_batch_64_l1_dropout_0.3": {
+        "SSIM": 0.5655141462539804,
+        "PSNR": 20.311088964708656,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 64,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.005_batch_16_l1_dropout_0.3": {
+        "SSIM": 0.7734238258723555,
+        "PSNR": 20.452698942787976,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 16,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.0005_batch_32_l1_dropout_0.1": {
+        "SSIM": 0.6406938289773876,
+        "PSNR": 21.34707493216512,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 32,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.0002_batch_64_l1_dropout_0.5": {
+        "SSIM": 0.5687328196805099,
+        "PSNR": 20.188727367900114,
+        "params": {
+            "lr": 0.0002,
+            "batch_size": 64,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.005_batch_16_l1_dropout_0.5": {
+        "SSIM": 0.7026291489601135,
+        "PSNR": 21.851482498735443,
+        "params": {
+            "lr": 0.005,
+            "batch_size": 16,
+            "dropout_rate": 0.5
+        }
+    },
+    "lr_0.0005_batch_16_l1_dropout_0.3": {
+        "SSIM": 0.6156559278225077,
+        "PSNR": 21.6486106608811,
+        "params": {
+            "lr": 0.0005,
+            "batch_size": 16,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.001_batch_16_l1_dropout_0.3": {
+        "SSIM": 0.5883139556851881,
+        "PSNR": 20.643660889509327,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 16,
+            "dropout_rate": 0.3
+        }
+    },
+    "lr_0.001_batch_32_l1_dropout_0.1": {
+        "SSIM": 0.5717577954818462,
+        "PSNR": 19.868824364872953,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 32,
+            "dropout_rate": 0.1
+        }
+    },
+    "lr_0.001_batch_16_l1_dropout_0.5": {
+        "SSIM": 0.6452477594901775,
+        "PSNR": 20.844776005814534,
+        "params": {
+            "lr": 0.001,
+            "batch_size": 16,
+            "dropout_rate": 0.5
+        }
+    }
+}

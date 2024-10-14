@@ -11,14 +11,14 @@ from evaluate import evaluate_model
 # Argument parser for flexible inputs
 def parse_args():
     parser = argparse.ArgumentParser(description="Train a GAN for sketch-to-image generation.")
-    parser.add_argument('--sketch_dir', type=str, default="Data/raw/sketches", required=False, help='Path to the sketches directory.')
+    parser.add_argument('--sketch_dir', type=str, default="Data/raw/generate_inverted_sketches", required=False, help='Path to the sketches directory.')
     parser.add_argument('--photo_dir', type=str, default="Data/raw/portraits", required=False, help='Path to the photos directory.')
     parser.add_argument('--batch_size', type=int, default=16, help='Batch size for training.')
-    parser.add_argument('--num_epochs', type=int, default=50, help='Number of epochs to train.')
-    parser.add_argument('--lr', type=float, default=0.0002, help='learning rate for generator and discriminator')   
+    parser.add_argument('--num_epochs', type=int, default=100, help='Number of epochs to train.')
+    parser.add_argument('--lr', type=float, default=0.005, help='learning rate for generator and discriminator')   
     parser.add_argument('--save_path', type=str, default='savemodels', help='Path to save the trained models.')
-    parser.add_argument('--patience', type=int, default=10, help='Patience for early stopping.')
-    parser.add_argument('--experiment_name', type=str, default='experiment', help='Name of the experiment.')
+    parser.add_argument('--patience', type=int, default=5, help='Patience for early stopping.')
+    parser.add_argument('--experiment_name', type=str, default='gamma_inverted', help='Name of the experiment.')
     parser.add_argument('--dropout', type=float, default=0.5, help='Dropout value for the generator and discriminator.')
     parser.add_argument('--verbose', type=bool, default=True, help='Toggle verbose output.')
     

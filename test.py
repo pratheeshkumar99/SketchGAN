@@ -9,11 +9,11 @@ from dataset_loader import create_dataloaders  # Your dataloader creation method
 def parse_args():
     parser = argparse.ArgumentParser(description='Random image selection from test data for visualization')
     parser.add_argument('--photo_dir', type=str, default="Data/raw/portraits",required=False, help='Path to photo directory')
-    parser.add_argument('--sketch_dir', type=str,default="Data/raw/sketches", required=False, help='Path to sketch directory')
+    parser.add_argument('--sketch_dir', type=str,default="Data/raw/gamma_inverted_sketches", required=False, help='Path to sketch directory')
     parser.add_argument('--batch_size', type=int, default=16, help='Batch size for the dataloader')
     parser.add_argument('--test_size', type=float, default=0.3, help='Test data split ratio')
     parser.add_argument('--val_split', type=float, default=0.5, help='Validation split from test set')
-    parser.add_argument('--checkpoint_path', type=str, default="savemodels/best_generator.pth", help='path of the trained model')
+    parser.add_argument('--checkpoint_path', type=str, default="savemodels/gamma_inversion/best_generator.pth", help='path of the trained model')
     parser.add_argument('--shuffle', type=bool, default=True, help='Shuffle the test data')
     parser.add_argument('--idx', type=int, default=0, help='Index of the batch')
     parser.add_argument('--example_idx', type=int, default=0, help='Index of the example')

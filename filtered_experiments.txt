@@ -1,0 +1,239 @@
+Running experiment with lr=0.0002, batch_size=8 ,dropout_rate=0.1
+Average SSIM: 0.7103
+Average PSNR: 22.4109
+
+
+Running experiment with lr=0.0002, batch_size=8 ,dropout_rate=0.3
+Average SSIM: 0.7703
+Average PSNR: 23.0154
+
+
+Running experiment with lr=0.0002, batch_size=8 ,dropout_rate=0.5
+Average SSIM: 0.7046
+Average PSNR: 22.2198
+
+
+Running experiment with lr=0.0002, batch_size=16 ,dropout_rate=0.1
+Average SSIM: 0.7040
+Average PSNR: 22.1601
+
+
+Running experiment with lr=0.0002, batch_size=16 ,dropout_rate=0.3
+Average SSIM: 0.7543
+Average PSNR: 22.8276
+
+
+Running experiment with lr=0.0002, batch_size=16 ,dropout_rate=0.5
+Average SSIM: 0.6676
+Average PSNR: 21.8549
+
+
+Running experiment with lr=0.0002, batch_size=32 ,dropout_rate=0.1
+Average SSIM: 0.6336
+Average PSNR: 21.2120
+
+
+Running experiment with lr=0.0002, batch_size=32 ,dropout_rate=0.3
+Average SSIM: 0.6578
+Average PSNR: 21.3023
+
+
+Running experiment with lr=0.0002, batch_size=32 ,dropout_rate=0.5
+Average SSIM: 0.6541
+Average PSNR: 21.6269
+
+
+Running experiment with lr=0.0002, batch_size=64 ,dropout_rate=0.1
+Average SSIM: 0.3999
+Average PSNR: 18.3512
+
+
+Running experiment with lr=0.0002, batch_size=64 ,dropout_rate=0.3
+Average SSIM: 0.6024
+Average PSNR: 21.0344
+
+
+Running experiment with lr=0.0002, batch_size=64 ,dropout_rate=0.5
+Average SSIM: 0.6023
+Average PSNR: 20.9748
+
+
+Running experiment with lr=0.0005, batch_size=8 ,dropout_rate=0.1
+Average SSIM: 0.7738
+Average PSNR: 22.8077
+
+
+Running experiment with lr=0.0005, batch_size=8 ,dropout_rate=0.3
+Average SSIM: 0.7055
+Average PSNR: 22.2458
+
+
+Running experiment with lr=0.0005, batch_size=8 ,dropout_rate=0.5
+Average SSIM: 0.6657
+Average PSNR: 21.6333
+
+
+Running experiment with lr=0.0005, batch_size=16 ,dropout_rate=0.1
+Average SSIM: 0.7679
+Average PSNR: 22.8393
+
+
+Running experiment with lr=0.0005, batch_size=16 ,dropout_rate=0.3
+Average SSIM: 0.7607
+Average PSNR: 21.9132
+
+
+Running experiment with lr=0.0005, batch_size=16 ,dropout_rate=0.5
+Average SSIM: 0.5768
+Average PSNR: 21.5456
+
+
+Running experiment with lr=0.0005, batch_size=32 ,dropout_rate=0.1
+Average SSIM: 0.5327
+Average PSNR: 20.2602
+
+
+Running experiment with lr=0.0005, batch_size=32 ,dropout_rate=0.3
+Average SSIM: 0.6360
+Average PSNR: 21.0265
+
+
+Running experiment with lr=0.0005, batch_size=32 ,dropout_rate=0.5
+Average SSIM: 0.6191
+Average PSNR: 21.1727
+
+
+Running experiment with lr=0.0005, batch_size=64 ,dropout_rate=0.1
+Average SSIM: 0.7088
+Average PSNR: 21.7670
+
+
+Running experiment with lr=0.0005, batch_size=64 ,dropout_rate=0.3
+Average SSIM: 0.5172
+Average PSNR: 19.8059
+
+
+Running experiment with lr=0.0005, batch_size=64 ,dropout_rate=0.5
+Average SSIM: 0.5951
+Average PSNR: 21.3263
+
+
+Running experiment with lr=0.001, batch_size=8 ,dropout_rate=0.1
+Average SSIM: 0.7814
+Average PSNR: 22.8327
+
+
+Running experiment with lr=0.001, batch_size=8 ,dropout_rate=0.3
+Average SSIM: 0.6071
+Average PSNR: 19.4075
+
+
+Running experiment with lr=0.001, batch_size=8 ,dropout_rate=0.5
+Average SSIM: 0.6216
+Average PSNR: 21.1097
+
+
+Running experiment with lr=0.001, batch_size=16 ,dropout_rate=0.1
+Average SSIM: 0.7605
+Average PSNR: 22.6732
+
+
+Running experiment with lr=0.001, batch_size=16 ,dropout_rate=0.3
+Average SSIM: 0.7210
+Average PSNR: 21.9124
+
+
+Running experiment with lr=0.001, batch_size=16 ,dropout_rate=0.5
+Average SSIM: 0.7384
+Average PSNR: 21.5912
+
+
+Running experiment with lr=0.001, batch_size=32 ,dropout_rate=0.1
+Average SSIM: 0.5649
+Average PSNR: 19.7852
+
+
+Running experiment with lr=0.001, batch_size=32 ,dropout_rate=0.3
+Average SSIM: 0.6175
+Average PSNR: 20.1295
+
+
+Running experiment with lr=0.001, batch_size=32 ,dropout_rate=0.5
+Average SSIM: 0.6743
+Average PSNR: 20.7060
+
+
+Running experiment with lr=0.001, batch_size=64 ,dropout_rate=0.1
+Average SSIM: 0.5615
+Average PSNR: 20.3496
+
+
+Running experiment with lr=0.001, batch_size=64 ,dropout_rate=0.3
+Average SSIM: 0.5649
+Average PSNR: 20.5889
+
+
+Running experiment with lr=0.001, batch_size=64 ,dropout_rate=0.5
+Average SSIM: 0.5696
+Average PSNR: 19.9594
+
+
+Running experiment with lr=0.005, batch_size=8 ,dropout_rate=0.1
+Average SSIM: 0.6859
+Average PSNR: 19.6989
+
+
+Running experiment with lr=0.005, batch_size=8 ,dropout_rate=0.3
+Average SSIM: 0.6903
+Average PSNR: 20.8562
+
+
+Running experiment with lr=0.005, batch_size=8 ,dropout_rate=0.5
+Average SSIM: 0.7704
+Average PSNR: 22.2680
+
+
+Running experiment with lr=0.005, batch_size=16 ,dropout_rate=0.1
+Average SSIM: 0.8076
+Average PSNR: 22.4752
+
+
+Running experiment with lr=0.005, batch_size=16 ,dropout_rate=0.3
+Average SSIM: 0.6607
+Average PSNR: 18.8778
+
+
+Running experiment with lr=0.005, batch_size=16 ,dropout_rate=0.5
+Average SSIM: 0.7656
+Average PSNR: 22.1200
+
+
+Running experiment with lr=0.005, batch_size=32 ,dropout_rate=0.1
+Average SSIM: 0.4024
+Average PSNR: 17.5219
+
+
+Running experiment with lr=0.005, batch_size=32 ,dropout_rate=0.3
+Average SSIM: 0.6679
+Average PSNR: 20.5996
+
+
+Running experiment with lr=0.005, batch_size=32 ,dropout_rate=0.5
+Average SSIM: 0.6787
+Average PSNR: 20.0267
+
+
+
+Running experiment with lr=0.005, batch_size=64 ,dropout_rate=0.1
+Average SSIM: 0.5354
+Average PSNR: 17.7293
+
+
+Running experiment with lr=0.005, batch_size=64 ,dropout_rate=0.3
+Average SSIM: 0.4509
+Average PSNR: 18.6437
+
+
+Running experiment with lr=0.005, batch_size=64 ,dropout_rate=0.5
+Average SSIM: 0.6040
+Average PSNR: 19.1089
