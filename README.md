@@ -144,8 +144,11 @@ Each combination of hyperparameters was used to train the model from scratch, en
 #### Results
 The results of the grid search were meticulously recorded, noting the SSIM and PSNR scores for each configuration. Below are the top-performing models based on both SSIM and PSNR, providing insights into which settings yielded the best overall image quality.
 
-**Grid Search Hyperparameter Tuning Results:**
-Summary of Top Performing Models Based on Both SSIM and PSNR:
+#### Grid Search Results for Original Models
+
+##### Summary of Top Performing Models
+This table presents the top 5 models that achieved the best overall performance, balancing both SSIM and PSNR metrics. These configurations demonstrated excellent performance in generating high-quality images while maintaining structural similarity to the target images.
+
 | Model ID | Learning Rate | Batch Size | L1 Weight | Dropout Rate | SSIM  | PSNR  | Overview                                      |
 |----------|---------------|------------|-----------|--------------|-------|-------|----------------------------------------------|
 | 1        | 0.005         | 8          | 100       | 0.1          | 0.6858| 18.06 | Best overall, excellent balance and reduction|
@@ -154,7 +157,9 @@ Summary of Top Performing Models Based on Both SSIM and PSNR:
 | 4        | 0.001         | 8          | 100       | 0.1          | 0.6055| 18.00 | Well-balanced, effective in fidelity & noise |
 | 5        | 0.005         | 8          | 50        | 0.1          | 0.6569| 17.25 | Strong performance, good overall quality     |
 
-Top Five Based on SSIM (Structural Similarity Index):
+##### Models Optimized for Structural Similarity (SSIM)
+The following table shows the top 5 models ranked by SSIM scores. These configurations particularly excel at maintaining structural similarity between generated and target images, which is crucial for preserving important facial features and details.
+
 | Rank | Learning Rate | Batch Size | L1 Weight | Dropout Rate | SSIM  | PSNR  |
 |------|---------------|------------|-----------|--------------|-------|-------|
 | 1    | 0.005         | 8          | 200       | 0.3          | 0.7025| 17.85 |
@@ -163,7 +168,9 @@ Top Five Based on SSIM (Structural Similarity Index):
 | 4    | 0.005         | 8          | 50        | 0.3          | 0.6642| 17.56 |
 | 5    | 0.005         | 8          | 10        | 0.1          | 0.6569| 17.25 |
 
-Top Five Based on PSNR (Peak Signal-to-Noise Ratio):
+##### Models Optimized for Image Quality (PSNR)
+This table presents the top 5 models ranked by PSNR scores. These configurations achieve the best signal-to-noise ratio, resulting in cleaner and more visually appealing generated images.
+
 | Rank | Learning Rate | Batch Size | L1 Weight | Dropout Rate | SSIM  | PSNR  |
 |------|---------------|------------|-----------|--------------|-------|-------|
 | 1    | 0.001         | 8          | 10        | 0.5          | 0.6259| 18.40 |
@@ -226,11 +233,11 @@ After applying gamma inversion to the sketches, the models were retrained using 
 - **SSIM (Structural Similarity Index)**: Measures the quality of the generated images in terms of their structural similarity to the target images.
 - **PSNR (Peak Signal-to-Noise Ratio)**: Evaluates the quality of the generated images by comparing the noise level to the fidelity of the image reproduction.
 
-#### Grid Search Results
-The grid search was comprehensive, focusing on balancing the SSIM and PSNR scores to determine the best overall model performance. Here are the results:
+#### Grid Search Results for Gamma-Inverted Models
 
-**Grid Search Hyperparameter Tuning Results for Gamma Inversion:**
-Summary of Top Performing Models Based on Both SSIM and PSNR:
+##### Summary of Enhanced Model Performance
+The following table presents the top performing models after applying gamma inversion preprocessing. These results show significant improvements in both SSIM and PSNR metrics compared to the baseline models.
+
 | Model ID | Learning Rate | Batch Size | Dropout Rate | SSIM  | PSNR  | Overview                                       |
 |----------|---------------|------------|--------------|-------|-------|------------------------------------------------|
 | 1        | 0.005         | 16         | 0.1          | 0.8076| 22.475| Highest SSIM, best overall PSNR, excellent balance|
@@ -239,7 +246,9 @@ Summary of Top Performing Models Based on Both SSIM and PSNR:
 | 4        | 0.0005        | 8          | 0.1          | 0.7738| 22.808| Well-balanced, effective in fidelity and noise  |
 | 5        | 0.0002        | 8          | 0.3          | 0.7703| 23.015| Strong performance, best PSNR overall          |
 
-Top Five Based on SSIM (Structural Similarity Index):
+##### Enhanced Models Optimized for Structural Similarity (SSIM)
+These configurations achieved the highest SSIM scores after gamma inversion, demonstrating superior preservation of structural details and features.
+
 | Rank | Learning Rate | Batch Size | Dropout Rate | SSIM  | PSNR  |
 |------|---------------|------------|--------------|-------|-------|
 | 1    | 0.005         | 16         | 0.1          | 0.8076| 22.475|
@@ -248,7 +257,9 @@ Top Five Based on SSIM (Structural Similarity Index):
 | 4    | 0.005         | 8          | 0.5          | 0.7704| 22.268|
 | 5    | 0.0002        | 8          | 0.3          | 0.7703| 23.015|
 
-Top Five Based on PSNR (Peak Signal-to-Noise Ratio):
+##### Enhanced Models Optimized for Image Quality (PSNR)
+These models achieved the highest PSNR scores after gamma inversion, indicating superior noise reduction and overall image quality.
+
 | Rank | Learning Rate | Batch Size | Dropout Rate | SSIM  | PSNR  |
 |------|---------------|------------|--------------|-------|-------|
 | 1    | 0.0002        | 8          | 0.3          | 0.7703| 23.015|
@@ -301,3 +312,31 @@ If you encounter any issues while downloading or using the models, please check 
 - Check that your environment meets all the dependencies required to run the model.
 
 For more support, feel free to open an issue in this repository or contact lnu.prat@northeastern.edu.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
