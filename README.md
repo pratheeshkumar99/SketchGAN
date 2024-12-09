@@ -134,6 +134,59 @@ The architectures above illustrate:
 ### Overview
 This section outlines the training process for a Generative Adversarial Network (GAN) specifically designed to convert sketches to photorealistic images. The process involves two main components: the generator and the discriminator, each with distinct roles in the training dynamics.
 
+```mermaid
+graph TD
+    subgraph "Discriminator Training"
+        S1[Sketch Input] --> D1[Discriminator]
+        R1[Real Image] --> D1
+        S2[Sketch Input] --> G1[Generator]
+        G1 --> F1[Fake Image]
+        F1 --> D2[Discriminator]
+        S3[Sketch Input] --> D2
+        D1 --> L1[Real Loss]
+        D2 --> L2[Fake Loss]
+        L1 & L2 --> DL[Combined Discriminator Loss]
+    end
+
+    subgraph "Generator Training"
+        S4[Sketch Input] --> G2[Generator]
+        G2 --> F2[Generated Image]
+        F2 --> D3[Discriminator]
+        S5[Sketch Input] --> D3
+        D3 --> GL1[Adversarial Loss]
+        R2[Real Image] --> PL[Pixel-wise L1 Loss]
+        F2 --> PL
+        GL1 & PL --> GL[Combined Generator Loss]
+    end
+
+    style S1 fill:#e6f3ff,stroke:#333,stroke-width:2px
+    style S2 fill:#e6f3ff,stroke:#333,stroke-width:2px
+    style S3 fill:#e6f3ff,stroke:#333,stroke-width:2px
+    style S4 fill:#e6f3ff,stroke:#333,stroke-width:2px
+    style S5 fill:#e6f3ff,stroke:#333,stroke-width:2px
+    style R1 fill:#fff2e6,stroke:#333,stroke-width:2px
+    style R2 fill:#fff2e6,stroke:#333,stroke-width:2px
+    style F1 fill:#ffe6e6,stroke:#333,stroke-width:2px
+    style F2 fill:#ffe6e6,stroke:#333,stroke-width:2px
+    style G1 fill:#e6ffe6,stroke:#333,stroke-width:2px
+    style G2 fill:#e6ffe6,stroke:#333,stroke-width:2px
+    style D1 fill:#f0e6ff,stroke:#333,stroke-width:2px
+    style D2 fill:#f0e6ff,stroke:#333,stroke-width:2px
+    style D3 fill:#f0e6ff,stroke:#333,stroke-width:2px
+   ```
+
+   This diagram illustrates:
+
+1. **Discriminator Training Phase:**
+  * Real path: Sketch + Real Image → Discriminator → Real Loss
+  * Fake path: Sketch → Generator → Fake Image → Discriminator → Fake Loss 
+  * Combined discriminator loss from both paths
+
+2. **Generator Training Phase:**
+  * Adversarial path: Sketch → Generator → Fake Image → Discriminator → Adversarial Loss
+  * Pixel-wise path: Generated Image vs Real Image → L1 Loss
+  * Combined generator loss from both components
+
 ### Model Components
 
 ### Generator (UNetGenerator)
