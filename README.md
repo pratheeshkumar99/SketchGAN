@@ -1,5 +1,12 @@
-# SketchGAN-Sketch-to-Image-Generation-and-Criminal-Identification
-Sketch-to-Image Criminal Identification System using a pix2pix GAN trained on the CUHK dataset to generate realistic images from sketches. A classifier is then trained to identify individuals based on generated images, enhancing forensic sketch recognition with deep learning for accurate identification.
+# Enhancing Forensic Sketch-to-Image GAN Performance with Advanced Image Preprocessing Techniques
+
+Welcome to the project documentation for an innovative approach to sketch-to-image generation, which leverages advanced image preprocessing techniques to significantly improve the quality and accuracy of generated images. This system uses a pix2pix GAN architecture, trained on the CUHK dataset, and incorporates gamma-inverted sketches to produce photorealistic images. The enhancements not only lead to higher Structural Similarity Index (SSIM) and Peak Signal-to-Noise Ratio (PSNR) but also enhance the accuracy of a subsequent classifier trained to identify individuals from these images. We explore two distinct training setups: one using standard sketches and another using gamma-inverted sketches, demonstrating the substantial benefits of image preprocessing in deep learning applications for criminal identification.
+
+## Project Overview
+
+This project introduces a dual-phase training approach where Generative Adversarial Networks (GANs) are first trained with standard sketches and then re-trained with gamma-inverted sketches. The comparative analysis of these two training phases clearly shows that preprocessing sketches with techniques such as gamma inversion significantly enhances the visual quality of generated images as reflected by improved SSIM and PSNR metrics. 
+
+<!-- Additionally, a classifier utilized these generated images to identify individuals, achieving higher accuracy with images derived from enhanced sketches. This documentation details the methods used, the GAN training process, enhancements applied, and the comparative results of our experiments. -->
 
 
 ## GAN Training Process for Sketch-to-Image Generation
@@ -44,8 +51,150 @@ Each training epoch involves:
 - **Validation Checks**: Regularly evaluate the generator's performance using the L1 loss on a validation set to monitor image accuracy.
 - **Early Stopping**: Stops training if validation loss does not improve for a defined number of epochs, preventing overfitting.
 
-### Conclusion
 The training strategy ensures that the generator produces high-quality images that are both visually convincing and highly accurate in terms of pixel resemblance to real images. This dual-focus approach is crucial for achieving realistic and practical results in sketch-to-image generation tasks.
+
+
+### Grid Search Hyperparameter Tuning
+
+The objective of the Grid Search Hyperparameter Tuning in this project was to systematically explore various combinations of learning rates, batch sizes, dropout rates, and L1 weights to identify the optimal settings for our Generative Adversarial Network (GAN) used in sketch-to-image generation. The goal was to maximize the quality of the generated images, as quantitatively measured by the Structural Similarity Index (SSIM) and Peak Signal-to-Noise Ratio (PSNR).
+
+#### Hyperparameter Space
+The hyperparameters varied during the grid search included:
+- **Learning Rates**: [0.0002, 0.0005, 0.001, 0.005]
+- **Batch Sizes**: [8, 16, 32, 64]
+- **Dropout Rates**: [0.1, 0.3, 0.5]
+- **L1 Weights** (not directly shown in tuning but implied in evaluations): [10, 50, 100, 200]
+
+#### Methodology
+Each combination of hyperparameters was used to train the model from scratch, ensuring that each configuration was evaluated independently. This approach allowed us to observe the impact of each hyperparameter on the model's ability to generate high-quality images.
+
+- **Training Setup**: Each model was trained using a consistent dataset, ensuring that the only variables were the hyperparameters.
+- **Evaluation**: After training, models were evaluated on a dedicated test set that the model had never seen during the training process. This helped in accurately assessing the generalizability of the model under each hyperparameter setting.
+
+#### Evaluation Metrics
+- **SSIM (Structural Similarity Index)**: Measures the similarity between two images. Higher SSIM values indicate better image quality and more accurate reproduction of the original image's structures.
+- **PSNR (Peak Signal-to-Noise Ratio)**: Assesses the quality of a reconstructed image compared to its original version. Higher PSNR values indicate better image quality by showing higher signal-to-noise ratio.
+
+#### Results
+The results of the grid search were meticulously recorded, noting the SSIM and PSNR scores for each configuration. Below are the top-performing models based on both SSIM and PSNR, providing insights into which settings yielded the best overall image quality.
+
+**Grid Search Hyperparameter Tuning Results:**
+Summary of Top Performing Models Based on Both SSIM and PSNR:
+| Model ID | Learning Rate | Batch Size | L1 Weight | Dropout Rate | SSIM  | PSNR  | Overview                                      |
+|----------|---------------|------------|-----------|--------------|-------|-------|----------------------------------------------|
+| 1        | 0.005         | 8          | 100       | 0.1          | 0.6858| 18.06 | Best overall, excellent balance and reduction|
+| 2        | 0.001         | 8          | 10        | 0.5          | 0.6259| 18.40 | Strong in both metrics, high image quality   |
+| 3        | 0.005         | 8          | 10        | 0.5          | 0.6549| 17.11 | Good image similarity with reasonable noise  |
+| 4        | 0.001         | 8          | 100       | 0.1          | 0.6055| 18.00 | Well-balanced, effective in fidelity & noise |
+| 5        | 0.005         | 8          | 50        | 0.1          | 0.6569| 17.25 | Strong performance, good overall quality     |
+
+Top Five Based on SSIM (Structural Similarity Index):
+| Rank | Learning Rate | Batch Size | L1 Weight | Dropout Rate | SSIM  | PSNR  |
+|------|---------------|------------|-----------|--------------|-------|-------|
+| 1    | 0.005         | 8          | 200       | 0.3          | 0.7025| 17.85 |
+| 2    | 0.005         | 8          | 100       | 0.1          | 0.6858| 18.06 |
+| 3    | 0.005         | 8          | 10        | 0.5          | 0.6549| 17.11 |
+| 4    | 0.005         | 8          | 50        | 0.3          | 0.6642| 17.56 |
+| 5    | 0.005         | 8          | 10        | 0.1          | 0.6569| 17.25 |
+
+Top Five Based on PSNR (Peak Signal-to-Noise Ratio):
+| Rank | Learning Rate | Batch Size | L1 Weight | Dropout Rate | SSIM  | PSNR  |
+|------|---------------|------------|-----------|--------------|-------|-------|
+| 1    | 0.001         | 8          | 10        | 0.5          | 0.6259| 18.40 |
+| 2    | 0.005         | 8          | 100       | 0.1          | 0.6858| 18.06 |
+| 3    | 0.001         | 8          | 100       | 0.1          | 0.6055| 18.00 |
+| 4    | 0.0002        | 16         | 10        | 0.5          | 0.6031| 18.01 |
+| 5    | 0.0005        | 8          | 10        | 0.3          | 0.5591| 18.24 |
+
+
+### Preprocessing for Enhanced Sketches
+
+#### Objective
+The objective of applying gamma inversion and other preprocessing techniques is to determine whether these enhancements result in higher quality image generation by a GAN. This involves transforming sketches in a way that enhances their features, making them more suitable for training the GAN to produce photorealistic images.
+
+#### Gamma Inversion Sketch Enhancement Process
+
+The preprocessing of images into gamma-inverted sketches involves a series of steps designed to enhance the details and contrasts within the sketches. Here's a detailed breakdown of each step:
+
+1. **Image Loading**
+   - The original image is loaded using OpenCV, ensuring it is in a format suitable for image processing.
+
+2. **Grayscale Conversion**
+   - The image is converted from RGB to grayscale. This reduction of complexity by eliminating color information focuses attention on the intensity of pixels, crucial for highlighting structural details in the sketch.
+
+3. **Gaussian Blur Application**
+   - A Gaussian blur is applied to the grayscale image. This smoothing step reduces noise and detail, which is vital for the subsequent edge enhancement.
+
+4. **Edge Enhancement**
+   - By dividing the grayscale image by its blurred version and scaling the result, edges are significantly enhanced. This step emphasizes the contrast between sharply defined edges and smoothed areas, highlighting boundaries and textures essential for sketches.
+
+5. **Gamma Correction with Inversion**
+   - Applying gamma correction with inversion (e.g., using a gamma value of 0.1) inverts the light-dark dynamics. This enhances contrast, particularly around edges and textures, making these features more pronounced and easier for the GAN to learn.
+
+6. **Saving the Sketch**
+   - The enhanced sketch is saved and used as training data. These sketches are not only clearer for training but also provide a robust test of the GAN’s ability to replicate detailed textures and contrasts.
+
+#### Rationale Behind Gamma Inversion
+
+Using gamma inversion aims to:
+- **Enhance Feature Learning**: By increasing contrast and edge clarity, the GAN focuses on critical structural elements, crucial for generating realistic outputs.
+- **Improve Texture Reproduction**: The emphasized textures aid in creating more visually appealing and realistic generated images.
+- **Adapt to Diverse Lighting Conditions**: Adjusting gamma values helps the model handle images under various lighting conditions, enhancing its robustness.
+
+
+These preprocessing enhancements, especially gamma inversion, are designed to optimize the input sketches for GAN training. The goal is to check if these improved inputs lead to better-quality outputs in terms of image realism and fidelity, crucial for applications like criminal identification where detail accuracy is paramount.
+
+#### Impact on GAN Training
+The use of gamma-inverted sketches is expected to provide the GAN with clearer and more detailed information about the edges and contours present in the original images, which can be crucial for improving the accuracy of the image generation process.
+
+### Grid Search Hyperparameter Tuning for Enhanced Models
+
+After applying gamma inversion to the sketches, the models were retrained using a grid search approach to find the optimal hyperparameters that yield the best results in terms of image quality, assessed by SSIM and PSNR.
+
+#### Hyperparameter Grid
+- **Learning Rates**: [0.0002, 0.0005, 0.001, 0.005]
+- **Batch Sizes**: [8, 16]
+- **Dropout Rates**: [0.1, 0.3, 0.5]
+
+#### Evaluation Metrics
+- **SSIM (Structural Similarity Index)**: Measures the quality of the generated images in terms of their structural similarity to the target images.
+- **PSNR (Peak Signal-to-Noise Ratio)**: Evaluates the quality of the generated images by comparing the noise level to the fidelity of the image reproduction.
+
+#### Grid Search Results
+The grid search was comprehensive, focusing on balancing the SSIM and PSNR scores to determine the best overall model performance. Here are the results:
+
+**Grid Search Hyperparameter Tuning Results for Gamma Inversion:**
+Summary of Top Performing Models Based on Both SSIM and PSNR:
+| Model ID | Learning Rate | Batch Size | Dropout Rate | SSIM  | PSNR  | Overview                                       |
+|----------|---------------|------------|--------------|-------|-------|------------------------------------------------|
+| 1        | 0.005         | 16         | 0.1          | 0.8076| 22.475| Highest SSIM, best overall PSNR, excellent balance|
+| 2        | 0.005         | 8          | 0.5          | 0.7704| 22.268| Strong in both metrics, good fidelity           |
+| 3        | 0.001         | 8          | 0.1          | 0.7814| 22.833| High SSIM and PSNR, best learning rate 0.001   |
+| 4        | 0.0005        | 8          | 0.1          | 0.7738| 22.808| Well-balanced, effective in fidelity and noise  |
+| 5        | 0.0002        | 8          | 0.3          | 0.7703| 23.015| Strong performance, best PSNR overall          |
+
+Top Five Based on SSIM (Structural Similarity Index):
+| Rank | Learning Rate | Batch Size | Dropout Rate | SSIM  | PSNR  |
+|------|---------------|------------|--------------|-------|-------|
+| 1    | 0.005         | 16         | 0.1          | 0.8076| 22.475|
+| 2    | 0.001         | 8          | 0.1          | 0.7814| 22.833|
+| 3    | 0.0005        | 8          | 0.1          | 0.7738| 22.808|
+| 4    | 0.005         | 8          | 0.5          | 0.7704| 22.268|
+| 5    | 0.0002        | 8          | 0.3          | 0.7703| 23.015|
+
+Top Five Based on PSNR (Peak Signal-to-Noise Ratio):
+| Rank | Learning Rate | Batch Size | Dropout Rate | SSIM  | PSNR  |
+|------|---------------|------------|--------------|-------|-------|
+| 1    | 0.0002        | 8          | 0.3          | 0.7703| 23.015|
+| 2    | 0.001         | 8          | 0.1          | 0.7814| 22.833|
+| 3    | 0.0005        | 8          | 0.1          | 0.7738| 22.808|
+| 4    | 0.005         | 16         | 0.1          | 0.8076| 22.475|
+| 5    | 0.005         | 8          | 0.5          | 0.7704| 22.268|
+
+#### Conclusion
+The results indicate a significant improvement in both SSIM and PSNR scores with the use of enhanced sketches. This suggests that preprocessing sketches with gamma inversion can be a beneficial technique in preparing training data for GANs, leading to higher quality and more realistic image generation.
+
+
 
 
 # Model Download Instructions

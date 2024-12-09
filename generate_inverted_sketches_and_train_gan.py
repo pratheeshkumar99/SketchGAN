@@ -1,4 +1,9 @@
+'''
+# This script generates gamma-inverted sketches from the original photos and trains the GAN model using the generated sketches.
+# The script uses OpenCV to convert the images to gamma-inverted sketches and trains the model using the generated sketches.
+# The training script is called as an external process using the `subprocess` module.
 
+'''
 import os
 import cv2
 import numpy as np
@@ -13,7 +18,14 @@ sketch_dir = "/Users/pratheeshjp/Documents/SketchGAN-Sketch-to-Image-Generation-
 
 
 
-
+#The image  is converted to a gamma-inverted sketch using the following steps:
+# Load the image using OpenCV
+# Convert the image to grayscale
+# Apply Gaussian blur to the grayscale image
+# Divide the grayscale image by the blurred image to enhance the edges ( This enchnaces the edges of the image)
+# Apply gamma correction with inversion to the enhanced image : gamma inversion can help the GAN to better learn and reproduce these features in its outputs,; 
+#This would  inverting the light-dark dynamics enhances contrast, particularly around edges and texture making the lighe areas darker and dark areas lighter which can help the GAN to better learn and reproduce these features in its outputs
+# Save the gamma-inverted sketch
 def render_sketch(image_path, output_path):
     """
     Function to convert an image to a gamma-inverted sketch.
