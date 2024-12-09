@@ -1,6 +1,12 @@
 import torch
 import torch.nn as nn
 
+# Unet based generator which takes a sketch as input and generates a colored image
+# It consists of an encoder, a bottleneck, and a decoder
+# The encoder downsamples the input image and the decoder upsamples it
+# The bottleneck is the bridge between the encoder and decoder
+# The generator is trained to generate realistic images from sketches
+
 # U-Net Generator
 class UNetGenerator(nn.Module):
     def __init__(self, dropout_value=0.5):

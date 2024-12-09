@@ -1,6 +1,9 @@
 import torch
 import torch.nn as nn
 
+
+# The PathGAN discriminator model is trained to classify whether the pair of images (sketch and image) are real pairs or fake pairs
+
 class PatchGANDiscriminator(nn.Module):
     def __init__(self, dropout_value=0.5):
         super(PatchGANDiscriminator, self).__init__()
