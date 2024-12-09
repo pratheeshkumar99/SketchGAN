@@ -1,6 +1,60 @@
 # Enhancing Forensic Sketch-to-Image GAN Performance with Advanced Image Preprocessing Techniques
 
-Welcome to the project documentation for an innovative approach to sketch-to-image generation, which leverages advanced image preprocessing techniques to significantly improve the quality and accuracy of generated images. This system uses a pix2pix GAN architecture, trained on the CUHK dataset, and incorporates gamma-inverted sketches to produce photorealistic images. The enhancements not only lead to higher Structural Similarity Index (SSIM) and Peak Signal-to-Noise Ratio (PSNR) but also enhance the accuracy of a subsequent classifier trained to identify individuals from these images. We explore two distinct training setups: one using standard sketches and another using gamma-inverted sketches, demonstrating the substantial benefits of image preprocessing in deep learning applications for criminal identification.
+<!-- Welcome to the project documentation for an innovative approach to sketch-to-image generation, which leverages advanced image preprocessing techniques to significantly improve the quality and accuracy of generated images. This system uses a pix2pix GAN architecture, trained on the CUHK dataset, and incorporates gamma-inverted sketches to produce photorealistic images. The enhancements not only lead to higher Structural Similarity Index (SSIM) and Peak Signal-to-Noise Ratio (PSNR) but also enhance the accuracy of a subsequent classifier trained to identify individuals from these images. We explore two distinct training setups: one using standard sketches and another using gamma-inverted sketches, demonstrating the substantial benefits of image preprocessing in deep learning applications for criminal identification. -->
+This project presents an innovative approach to forensic sketch-to-image generation using GANs with advanced preprocessing techniques. The system demonstrates significant improvements in image quality through gamma inversion preprocessing, achieving SSIM scores up to 0.8076 and PSNR values up to 23.015, compared to baseline scores of 0.7025 and 18.40 respectively.
+
+# Table of Contents
+
+## Overview
+
+
+## Contents
+
+1. [Project Overview](#project-overview)
+   - Dual-phase training approach
+   - Preprocessing benefits
+
+2. [Model Architectures](#model-architectures)
+   - U-Net Generator Architecture
+   - PatchGAN Discriminator Architecture
+
+3. [GAN Training Process](#gan-training-process-for-sketch-to-image-generation)
+   - Overview
+   - Model Components
+   - Loss Functions
+   - Training Procedure
+   - Optimization Setup
+   - Training Loop Dynamics
+   - Validation and Early Stopping
+
+4. [Grid Search Hyperparameter Tuning](#grid-search-hyperparameter-tuning)
+   - Hyperparameter Space
+   - Methodology
+   - Evaluation Metrics
+   - Results
+   - Grid Search Results for Original Models
+
+5. [Preprocessing for Enhanced Sketches](#preprocessing-for-enhanced-sketches)
+   - Objective
+   - Gamma Inversion Process
+   - Rationale
+   - Impact on Training
+
+6. [Enhanced Models Results](#grid-search-hyperparameter-tuning-for-enhanced-models)
+   - Hyperparameter Grid
+   - Evaluation Metrics
+   - Grid Search Results
+   - Performance Analysis
+
+7. [Model Download Instructions](#model-download-instructions)
+   - Available Models
+   - Usage Instructions
+   - Troubleshooting
+
+Key Achievements:
+- Baseline Models: Best SSIM: 0.7025, Best PSNR: 18.40
+- Enhanced Models: Best SSIM: 0.8076, Best PSNR: 23.015
+- Significant improvement in both structural similarity and image quality
 
 ## Project Overview
 
@@ -312,31 +366,3 @@ If you encounter any issues while downloading or using the models, please check 
 - Check that your environment meets all the dependencies required to run the model.
 
 For more support, feel free to open an issue in this repository or contact lnu.prat@northeastern.edu.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
