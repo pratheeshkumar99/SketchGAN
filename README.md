@@ -10,7 +10,7 @@ This project introduces a dual-phase training approach where Generative Adversar
 
 ## Model Architectures
 
-#### U-Net Generator Architecture
+### U-Net Generator Architecture
 ```mermaid
 graph TD
     subgraph "U-Net Generator Architecture"
@@ -63,16 +63,16 @@ graph TD
 The architectures above illustrate:
 
 1. **U-Net Generator**:
-  * Encoder path with progressive feature compression
-  * Decoder path with progressive feature expansion
-  * Skip connections between corresponding encoder and decoder layers 
-  * Input/output dimensions and feature channels at each level
+* Encoder path with progressive feature compression
+* Decoder path with progressive feature expansion
+* Skip connections between corresponding encoder and decoder layers 
+* Input/output dimensions and feature channels at each level
 
 2. **PatchGAN Discriminator**:
-  * Five convolutional layers with progressive downsampling
-  * Batch normalization and LeakyReLU activation
-  * Patch-based output for local feature discrimination
-  * Complete dimension transformations at each layer
+* Five convolutional layers with progressive downsampling
+* Batch normalization and LeakyReLU activation
+* Patch-based output for local feature discrimination
+* Complete dimension transformations at each layer
 
 
 ## GAN Training Process for Sketch-to-Image Generation
