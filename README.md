@@ -8,6 +8,72 @@ This project introduces a dual-phase training approach where Generative Adversar
 
 <!-- Additionally, a classifier utilized these generated images to identify individuals, achieving higher accuracy with images derived from enhanced sketches. This documentation details the methods used, the GAN training process, enhancements applied, and the comparative results of our experiments. -->
 
+## Model Architectures
+
+#### U-Net Generator Architecture
+```mermaid
+graph TD
+    subgraph "U-Net Generator Architecture"
+        input[Input Sketch 256x256x3] --> down1
+        
+        subgraph "Encoder Path"
+            down1[Down1: Conv 4x4 stride=2 <br/> 256x256x3 → 128x128x64] --> down2
+            down2[Down2: Conv 4x4 stride=2 <br/> 128x128x64 → 64x64x128] --> down3
+            down3[Down3: Conv 4x4 stride=2 <br/> 64x64x128 → 32x32x256] --> down4
+            down4[Down4: Conv 4x4 stride=2 <br/> 32x32x256 → 16x16x512] --> down5
+            down5[Down5: Conv 4x4 stride=2 <br/> 16x16x512 → 8x8x512] --> down6
+            down6[Down6: Conv 4x4 stride=2 <br/> 8x8x512 → 4x4x512] --> down7
+            down7[Down7: Conv 4x4 stride=2 <br/> 4x4x512 → 2x2x512]
+        end
+
+        subgraph "Decoder Path"
+            down7 --> up1[Up1: TransConv 4x4 stride=2 <br/> 2x2x512 → 4x4x512]
+            up1 & down6 --> up2[Up2: TransConv 4x4 stride=2 <br/> 4x4x1024 → 8x8x512]
+            up2 & down5 --> up3[Up3: TransConv 4x4 stride=2 <br/> 8x8x1024 → 16x16x512]
+            up3 & down4 --> up4[Up4: TransConv 4x4 stride=2 <br/> 16x16x1024 → 32x32x256]
+            up4 & down3 --> up5[Up5: TransConv 4x4 stride=2 <br/> 32x32x512 → 64x64x128]
+            up5 & down2 --> up6[Up6: TransConv 4x4 stride=2 <br/> 64x64x256 → 128x128x64]
+            up6 & down1 --> final[Final: TransConv 4x4 stride=2 <br/> 128x128x128 → 256x256x3]
+        end
+        
+        final --> output[Output Image 256x256x3]
+    end
+
+    style input fill:#f9f,stroke:#333,stroke-width:2px
+    style output fill:#f9f,stroke:#333,stroke-width:2px
+```
+
+### PatchGAN Discriminator Architecture
+```mermaid
+graph TD
+    subgraph "PatchGAN Discriminator Architecture"
+        input[Input: Sketch+Real/Generated Image <br/> 256x256x6] --> conv1
+        
+        conv1[Conv1: 4x4 stride=2 <br/> 256x256x6 → 128x128x64 <br/> No Norm, LeakyReLU] --> conv2
+        conv2[Conv2: 4x4 stride=2 <br/> 128x128x64 → 64x64x128 <br/> BatchNorm, LeakyReLU] --> conv3
+        conv3[Conv3: 4x4 stride=2 <br/> 64x64x128 → 32x32x256 <br/> BatchNorm, LeakyReLU] --> conv4
+        conv4[Conv4: 4x4 stride=2 <br/> 32x32x256 → 16x16x512 <br/> BatchNorm, LeakyReLU] --> output
+        output[Output Conv: 4x4 stride=1 <br/> 16x16x512 → 16x16x1]
+    end
+
+    style input fill:#f9f,stroke:#333,stroke-width:2px
+    style output fill:#f9f,stroke:#333,stroke-width:2px
+```
+
+The architectures above illustrate:
+
+1. **U-Net Generator**:
+  * Encoder path with progressive feature compression
+  * Decoder path with progressive feature expansion
+  * Skip connections between corresponding encoder and decoder layers 
+  * Input/output dimensions and feature channels at each level
+
+2. **PatchGAN Discriminator**:
+  * Five convolutional layers with progressive downsampling
+  * Batch normalization and LeakyReLU activation
+  * Patch-based output for local feature discrimination
+  * Complete dimension transformations at each layer
+
 
 ## GAN Training Process for Sketch-to-Image Generation
 
